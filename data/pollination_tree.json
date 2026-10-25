@@ -1,0 +1,196 @@
+[
+ {
+  "id": "root",
+  "parent": null,
+  "name": "Australia"
+ },
+ {
+  "id": "NSW",
+  "parent": "root",
+  "name": "New South Wales",
+  "abbr": "NSW"
+ },
+ {
+  "id": "VIC",
+  "parent": "root",
+  "name": "Victoria",
+  "abbr": "VIC"
+ },
+ {
+  "id": "WA",
+  "parent": "root",
+  "name": "Western Australia",
+  "abbr": "WA"
+ },
+ {
+  "id": "QLD",
+  "parent": "root",
+  "name": "Queensland",
+  "abbr": "QLD"
+ },
+ {
+  "id": "SA",
+  "parent": "root",
+  "name": "South Australia",
+  "abbr": "SA"
+ },
+ {
+  "id": "TAS",
+  "parent": "root",
+  "name": "Tasmania",
+  "abbr": "TAS"
+ },
+ {
+  "id": "NT",
+  "parent": "root",
+  "name": "Northern Territory",
+  "abbr": "NT"
+ },
+ {
+  "id": "c0",
+  "parent": "NSW",
+  "name": "Cotton",
+  "abbr": "NSW",
+  "value": 268.3
+ },
+ {
+  "id": "c1",
+  "parent": "NSW",
+  "name": "Blueberry",
+  "abbr": "NSW",
+  "value": 211.1
+ },
+ {
+  "id": "c2",
+  "parent": "NSW",
+  "name": "Canola",
+  "abbr": "NSW",
+  "value": 181.8
+ },
+ {
+  "id": "c3",
+  "parent": "QLD",
+  "name": "Avocado",
+  "abbr": "QLD",
+  "value": 118.8
+ },
+ {
+  "id": "c4",
+  "parent": "QLD",
+  "name": "Cotton",
+  "abbr": "QLD",
+  "value": 113.7
+ },
+ {
+  "id": "c5",
+  "parent": "QLD",
+  "name": "Strawberry",
+  "abbr": "QLD",
+  "value": 82.9
+ },
+ {
+  "id": "c6",
+  "parent": "VIC",
+  "name": "Almond",
+  "abbr": "VIC",
+  "value": 228.7
+ },
+ {
+  "id": "c7",
+  "parent": "VIC",
+  "name": "Apple",
+  "abbr": "VIC",
+  "value": 186.6
+ },
+ {
+  "id": "c8",
+  "parent": "VIC",
+  "name": "Lucerne & clover",
+  "abbr": "VIC",
+  "value": 165.9
+ },
+ {
+  "id": "c9",
+  "parent": "TAS",
+  "name": "Apple",
+  "abbr": "TAS",
+  "value": 40.6
+ },
+ {
+  "id": "c10",
+  "parent": "TAS",
+  "name": "Raspberry & blackberry",
+  "abbr": "TAS",
+  "value": 35.7
+ },
+ {
+  "id": "c11",
+  "parent": "TAS",
+  "name": "Cherry",
+  "abbr": "TAS",
+  "value": 34.9
+ },
+ {
+  "id": "c12",
+  "parent": "SA",
+  "name": "Vegetable seed",
+  "abbr": "SA",
+  "value": 76.0
+ },
+ {
+  "id": "c13",
+  "parent": "SA",
+  "name": "Almond",
+  "abbr": "SA",
+  "value": 74.6
+ },
+ {
+  "id": "c14",
+  "parent": "SA",
+  "name": "Lucerne & clover",
+  "abbr": "SA",
+  "value": 52.0
+ },
+ {
+  "id": "c15",
+  "parent": "WA",
+  "name": "Canola",
+  "abbr": "WA",
+  "value": 252.2
+ },
+ {
+  "id": "c16",
+  "parent": "WA",
+  "name": "Lupin",
+  "abbr": "WA",
+  "value": 74.2
+ },
+ {
+  "id": "c17",
+  "parent": "WA",
+  "name": "Lucerne & clover",
+  "abbr": "WA",
+  "value": 64.6
+ },
+ {
+  "id": "c18",
+  "parent": "NT",
+  "name": "Watermelon",
+  "abbr": "NT",
+  "value": 13.5
+ },
+ {
+  "id": "c19",
+  "parent": "NT",
+  "name": "Mango",
+  "abbr": "NT",
+  "value": 11.9
+ },
+ {
+  "id": "c20",
+  "parent": "NT",
+  "name": "Rockmelon",
+  "abbr": "NT",
+  "value": 8.0
+ }
+]

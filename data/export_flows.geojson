@@ -1,0 +1,5255 @@
+{
+ "type": "FeatureCollection",
+ "features": [
+  {
+   "type": "Feature",
+   "properties": {
+    "year": 2015,
+    "partner": "China",
+    "region": "East Asia",
+    "rank": 1,
+    "value_usd_m": 8.604,
+    "tonnes": 821.2,
+    "usd_per_kg": 10.48
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      133.8,
+      -25.3
+     ],
+     [
+      103.0,
+      35.0
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "year": 2015,
+    "partner": "Hong Kong",
+    "region": "East Asia",
+    "rank": 2,
+    "value_usd_m": 5.052,
+    "tonnes": 557.4,
+    "usd_per_kg": 9.06
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      133.8,
+      -25.3
+     ],
+     [
+      114.2,
+      22.3
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "year": 2015,
+    "partner": "Canada",
+    "region": "North America",
+    "rank": 3,
+    "value_usd_m": 3.308,
+    "tonnes": 560.4,
+    "usd_per_kg": 5.9
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      133.8,
+      -25.3
+     ],
+     [
+      -106.3,
+      56.1
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "year": 2015,
+    "partner": "Singapore",
+    "region": "Southeast Asia",
+    "rank": 4,
+    "value_usd_m": 2.76,
+    "tonnes": 514.2,
+    "usd_per_kg": 5.37
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      133.8,
+      -25.3
+     ],
+     [
+      103.8,
+      1.35
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "year": 2015,
+    "partner": "Philippines",
+    "region": "Southeast Asia",
+    "rank": 5,
+    "value_usd_m": 2.555,
+    "tonnes": 534.2,
+    "usd_per_kg": 4.78
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      133.8,
+      -25.3
+     ],
+     [
+      121.8,
+      12.9
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "year": 2015,
+    "partner": "Malaysia",
+    "region": "Southeast Asia",
+    "rank": 6,
+    "value_usd_m": 2.034,
+    "tonnes": 424.1,
+    "usd_per_kg": 4.8
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      133.8,
+      -25.3
+     ],
+     [
+      101.9,
+      4.2
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "year": 2015,
+    "partner": "United Arab Emirates",
+    "region": "Middle East",
+    "rank": 7,
+    "value_usd_m": 1.523,
+    "tonnes": 250.9,
+    "usd_per_kg": 6.07
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      133.8,
+      -25.3
+     ],
+     [
+      53.8,
+      23.4
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "year": 2015,
+    "partner": "Oman",
+    "region": "Middle East",
+    "rank": 8,
+    "value_usd_m": 1.35,
+    "tonnes": 237.0,
+    "usd_per_kg": 5.7
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      133.8,
+      -25.3
+     ],
+     [
+      55.9,
+      21.5
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "year": 2015,
+    "partner": "United Kingdom",
+    "region": "Europe",
+    "rank": 9,
+    "value_usd_m": 1.13,
+    "tonnes": 278.5,
+    "usd_per_kg": 4.06
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      133.8,
+      -25.3
+     ],
+     [
+      -2.0,
+      54.0
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "year": 2015,
+    "partner": "Saudi Arabia",
+    "region": "Middle East",
+    "rank": 10,
+    "value_usd_m": 0.774,
+    "tonnes": 149.6,
+    "usd_per_kg": 5.17
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      133.8,
+      -25.3
+     ],
+     [
+      45.1,
+      23.9
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "year": 2015,
+    "partner": "United States",
+    "region": "North America",
+    "rank": 11,
+    "value_usd_m": 0.761,
+    "tonnes": 139.0,
+    "usd_per_kg": 5.47
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      133.8,
+      -25.3
+     ],
+     [
+      -98.6,
+      39.8
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "year": 2015,
+    "partner": "Japan",
+    "region": "East Asia",
+    "rank": 12,
+    "value_usd_m": 0.669,
+    "tonnes": 108.7,
+    "usd_per_kg": 6.15
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      133.8,
+      -25.3
+     ],
+     [
+      138.3,
+      36.2
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "year": 2015,
+    "partner": "Indonesia",
+    "region": "Southeast Asia",
+    "rank": 13,
+    "value_usd_m": 0.581,
+    "tonnes": 122.6,
+    "usd_per_kg": 4.74
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      133.8,
+      -25.3
+     ],
+     [
+      118.0,
+      -2.5
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "year": 2015,
+    "partner": "Thailand",
+    "region": "Southeast Asia",
+    "rank": 14,
+    "value_usd_m": 0.48,
+    "tonnes": 106.5,
+    "usd_per_kg": 4.51
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      133.8,
+      -25.3
+     ],
+     [
+      101.0,
+      15.9
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "year": 2015,
+    "partner": "Mauritius",
+    "region": "Africa",
+    "rank": 15,
+    "value_usd_m": 0.468,
+    "tonnes": 96.8,
+    "usd_per_kg": 4.83
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      133.8,
+      -25.3
+     ],
+     [
+      57.6,
+      -20.3
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "year": 2015,
+    "partner": "South Korea",
+    "region": "East Asia",
+    "rank": 16,
+    "value_usd_m": 0.276,
+    "tonnes": 30.0,
+    "usd_per_kg": 9.2
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      133.8,
+      -25.3
+     ],
+     [
+      127.9,
+      36.5
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "year": 2015,
+    "partner": "Qatar",
+    "region": "Middle East",
+    "rank": 17,
+    "value_usd_m": 0.199,
+    "tonnes": 36.3,
+    "usd_per_kg": 5.49
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      133.8,
+      -25.3
+     ],
+     [
+      51.2,
+      25.3
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "year": 2015,
+    "partner": "Kuwait",
+    "region": "Middle East",
+    "rank": 18,
+    "value_usd_m": 0.196,
+    "tonnes": 28.8,
+    "usd_per_kg": 6.79
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      133.8,
+      -25.3
+     ],
+     [
+      47.5,
+      29.3
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "year": 2015,
+    "partner": "Papua New Guinea",
+    "region": "Pacific",
+    "rank": 19,
+    "value_usd_m": 0.159,
+    "tonnes": 33.6,
+    "usd_per_kg": 4.73
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      133.8,
+      -25.3
+     ],
+     [
+      143.9,
+      -6.3
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "year": 2015,
+    "partner": "Vietnam",
+    "region": "Southeast Asia",
+    "rank": 20,
+    "value_usd_m": 0.109,
+    "tonnes": 20.5,
+    "usd_per_kg": 5.31
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      133.8,
+      -25.3
+     ],
+     [
+      108.3,
+      14.1
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "year": 2015,
+    "partner": "Germany",
+    "region": "Europe",
+    "rank": 21,
+    "value_usd_m": 0.047,
+    "tonnes": 6.4,
+    "usd_per_kg": 7.41
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      133.8,
+      -25.3
+     ],
+     [
+      10.4,
+      51.2
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "year": 2016,
+    "partner": "China",
+    "region": "East Asia",
+    "rank": 1,
+    "value_usd_m": 8.333,
+    "tonnes": 800.4,
+    "usd_per_kg": 10.41
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      133.8,
+      -25.3
+     ],
+     [
+      103.0,
+      35.0
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "year": 2016,
+    "partner": "Hong Kong",
+    "region": "East Asia",
+    "rank": 2,
+    "value_usd_m": 3.547,
+    "tonnes": 356.9,
+    "usd_per_kg": 9.94
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      133.8,
+      -25.3
+     ],
+     [
+      114.2,
+      22.3
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "year": 2016,
+    "partner": "Singapore",
+    "region": "Southeast Asia",
+    "rank": 3,
+    "value_usd_m": 2.883,
+    "tonnes": 477.7,
+    "usd_per_kg": 6.04
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      133.8,
+      -25.3
+     ],
+     [
+      103.8,
+      1.35
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "year": 2016,
+    "partner": "Canada",
+    "region": "North America",
+    "rank": 4,
+    "value_usd_m": 2.753,
+    "tonnes": 455.6,
+    "usd_per_kg": 6.04
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      133.8,
+      -25.3
+     ],
+     [
+      -106.3,
+      56.1
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "year": 2016,
+    "partner": "Malaysia",
+    "region": "Southeast Asia",
+    "rank": 5,
+    "value_usd_m": 2.152,
+    "tonnes": 438.6,
+    "usd_per_kg": 4.91
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      133.8,
+      -25.3
+     ],
+     [
+      101.9,
+      4.2
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "year": 2016,
+    "partner": "Oman",
+    "region": "Middle East",
+    "rank": 6,
+    "value_usd_m": 1.723,
+    "tonnes": 297.0,
+    "usd_per_kg": 5.8
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      133.8,
+      -25.3
+     ],
+     [
+      55.9,
+      21.5
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "year": 2016,
+    "partner": "United Kingdom",
+    "region": "Europe",
+    "rank": 7,
+    "value_usd_m": 1.618,
+    "tonnes": 286.7,
+    "usd_per_kg": 5.64
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      133.8,
+      -25.3
+     ],
+     [
+      -2.0,
+      54.0
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "year": 2016,
+    "partner": "United Arab Emirates",
+    "region": "Middle East",
+    "rank": 8,
+    "value_usd_m": 1.454,
+    "tonnes": 250.9,
+    "usd_per_kg": 5.8
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      133.8,
+      -25.3
+     ],
+     [
+      53.8,
+      23.4
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "year": 2016,
+    "partner": "Philippines",
+    "region": "Southeast Asia",
+    "rank": 9,
+    "value_usd_m": 1.073,
+    "tonnes": 215.2,
+    "usd_per_kg": 4.99
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      133.8,
+      -25.3
+     ],
+     [
+      121.8,
+      12.9
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "year": 2016,
+    "partner": "Japan",
+    "region": "East Asia",
+    "rank": 10,
+    "value_usd_m": 0.97,
+    "tonnes": 170.8,
+    "usd_per_kg": 5.68
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      133.8,
+      -25.3
+     ],
+     [
+      138.3,
+      36.2
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "year": 2016,
+    "partner": "United States",
+    "region": "North America",
+    "rank": 11,
+    "value_usd_m": 0.673,
+    "tonnes": 101.8,
+    "usd_per_kg": 6.61
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      133.8,
+      -25.3
+     ],
+     [
+      -98.6,
+      39.8
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "year": 2016,
+    "partner": "Mauritius",
+    "region": "Africa",
+    "rank": 12,
+    "value_usd_m": 0.518,
+    "tonnes": 92.5,
+    "usd_per_kg": 5.6
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      133.8,
+      -25.3
+     ],
+     [
+      57.6,
+      -20.3
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "year": 2016,
+    "partner": "Saudi Arabia",
+    "region": "Middle East",
+    "rank": 13,
+    "value_usd_m": 0.417,
+    "tonnes": 65.6,
+    "usd_per_kg": 6.35
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      133.8,
+      -25.3
+     ],
+     [
+      45.1,
+      23.9
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "year": 2016,
+    "partner": "Indonesia",
+    "region": "Southeast Asia",
+    "rank": 14,
+    "value_usd_m": 0.335,
+    "tonnes": 75.6,
+    "usd_per_kg": 4.43
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      133.8,
+      -25.3
+     ],
+     [
+      118.0,
+      -2.5
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "year": 2016,
+    "partner": "Thailand",
+    "region": "Southeast Asia",
+    "rank": 15,
+    "value_usd_m": 0.332,
+    "tonnes": 64.7,
+    "usd_per_kg": 5.13
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      133.8,
+      -25.3
+     ],
+     [
+      101.0,
+      15.9
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "year": 2016,
+    "partner": "Papua New Guinea",
+    "region": "Pacific",
+    "rank": 16,
+    "value_usd_m": 0.261,
+    "tonnes": 44.2,
+    "usd_per_kg": 5.91
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      133.8,
+      -25.3
+     ],
+     [
+      143.9,
+      -6.3
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "year": 2016,
+    "partner": "Vietnam",
+    "region": "Southeast Asia",
+    "rank": 17,
+    "value_usd_m": 0.229,
+    "tonnes": 21.7,
+    "usd_per_kg": 10.53
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      133.8,
+      -25.3
+     ],
+     [
+      108.3,
+      14.1
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "year": 2016,
+    "partner": "Germany",
+    "region": "Europe",
+    "rank": 18,
+    "value_usd_m": 0.173,
+    "tonnes": 18.9,
+    "usd_per_kg": 9.12
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      133.8,
+      -25.3
+     ],
+     [
+      10.4,
+      51.2
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "year": 2016,
+    "partner": "Qatar",
+    "region": "Middle East",
+    "rank": 19,
+    "value_usd_m": 0.155,
+    "tonnes": 23.5,
+    "usd_per_kg": 6.59
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      133.8,
+      -25.3
+     ],
+     [
+      51.2,
+      25.3
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "year": 2016,
+    "partner": "Kuwait",
+    "region": "Middle East",
+    "rank": 20,
+    "value_usd_m": 0.151,
+    "tonnes": 16.9,
+    "usd_per_kg": 8.94
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      133.8,
+      -25.3
+     ],
+     [
+      47.5,
+      29.3
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "year": 2016,
+    "partner": "South Korea",
+    "region": "East Asia",
+    "rank": 21,
+    "value_usd_m": 0.113,
+    "tonnes": 13.3,
+    "usd_per_kg": 8.5
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      133.8,
+      -25.3
+     ],
+     [
+      127.9,
+      36.5
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "year": 2017,
+    "partner": "China",
+    "region": "East Asia",
+    "rank": 1,
+    "value_usd_m": 6.391,
+    "tonnes": 526.8,
+    "usd_per_kg": 12.13
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      133.8,
+      -25.3
+     ],
+     [
+      103.0,
+      35.0
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "year": 2017,
+    "partner": "Canada",
+    "region": "North America",
+    "rank": 2,
+    "value_usd_m": 3.535,
+    "tonnes": 353.4,
+    "usd_per_kg": 10.0
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      133.8,
+      -25.3
+     ],
+     [
+      -106.3,
+      56.1
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "year": 2017,
+    "partner": "Singapore",
+    "region": "Southeast Asia",
+    "rank": 3,
+    "value_usd_m": 3.195,
+    "tonnes": 463.6,
+    "usd_per_kg": 6.89
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      133.8,
+      -25.3
+     ],
+     [
+      103.8,
+      1.35
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "year": 2017,
+    "partner": "Hong Kong",
+    "region": "East Asia",
+    "rank": 4,
+    "value_usd_m": 2.488,
+    "tonnes": 258.7,
+    "usd_per_kg": 9.62
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      133.8,
+      -25.3
+     ],
+     [
+      114.2,
+      22.3
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "year": 2017,
+    "partner": "Malaysia",
+    "region": "Southeast Asia",
+    "rank": 5,
+    "value_usd_m": 2.072,
+    "tonnes": 355.2,
+    "usd_per_kg": 5.83
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      133.8,
+      -25.3
+     ],
+     [
+      101.9,
+      4.2
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "year": 2017,
+    "partner": "United Arab Emirates",
+    "region": "Middle East",
+    "rank": 6,
+    "value_usd_m": 1.662,
+    "tonnes": 234.1,
+    "usd_per_kg": 7.1
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      133.8,
+      -25.3
+     ],
+     [
+      53.8,
+      23.4
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "year": 2017,
+    "partner": "Japan",
+    "region": "East Asia",
+    "rank": 7,
+    "value_usd_m": 1.502,
+    "tonnes": 210.5,
+    "usd_per_kg": 7.14
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      133.8,
+      -25.3
+     ],
+     [
+      138.3,
+      36.2
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "year": 2017,
+    "partner": "United States",
+    "region": "North America",
+    "rank": 8,
+    "value_usd_m": 1.482,
+    "tonnes": 205.0,
+    "usd_per_kg": 7.23
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      133.8,
+      -25.3
+     ],
+     [
+      -98.6,
+      39.8
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "year": 2017,
+    "partner": "Oman",
+    "region": "Middle East",
+    "rank": 9,
+    "value_usd_m": 1.123,
+    "tonnes": 162.4,
+    "usd_per_kg": 6.91
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      133.8,
+      -25.3
+     ],
+     [
+      55.9,
+      21.5
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "year": 2017,
+    "partner": "United Kingdom",
+    "region": "Europe",
+    "rank": 10,
+    "value_usd_m": 1.103,
+    "tonnes": 251.8,
+    "usd_per_kg": 4.38
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      133.8,
+      -25.3
+     ],
+     [
+      -2.0,
+      54.0
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "year": 2017,
+    "partner": "Saudi Arabia",
+    "region": "Middle East",
+    "rank": 11,
+    "value_usd_m": 0.88,
+    "tonnes": 137.5,
+    "usd_per_kg": 6.4
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      133.8,
+      -25.3
+     ],
+     [
+      45.1,
+      23.9
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "year": 2017,
+    "partner": "Germany",
+    "region": "Europe",
+    "rank": 12,
+    "value_usd_m": 0.767,
+    "tonnes": 45.9,
+    "usd_per_kg": 16.71
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      133.8,
+      -25.3
+     ],
+     [
+      10.4,
+      51.2
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "year": 2017,
+    "partner": "Mauritius",
+    "region": "Africa",
+    "rank": 13,
+    "value_usd_m": 0.64,
+    "tonnes": 85.1,
+    "usd_per_kg": 7.52
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      133.8,
+      -25.3
+     ],
+     [
+      57.6,
+      -20.3
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "year": 2017,
+    "partner": "Philippines",
+    "region": "Southeast Asia",
+    "rank": 14,
+    "value_usd_m": 0.602,
+    "tonnes": 83.4,
+    "usd_per_kg": 7.22
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      133.8,
+      -25.3
+     ],
+     [
+      121.8,
+      12.9
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "year": 2017,
+    "partner": "Thailand",
+    "region": "Southeast Asia",
+    "rank": 15,
+    "value_usd_m": 0.397,
+    "tonnes": 87.3,
+    "usd_per_kg": 4.54
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      133.8,
+      -25.3
+     ],
+     [
+      101.0,
+      15.9
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "year": 2017,
+    "partner": "Papua New Guinea",
+    "region": "Pacific",
+    "rank": 16,
+    "value_usd_m": 0.374,
+    "tonnes": 53.5,
+    "usd_per_kg": 6.99
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      133.8,
+      -25.3
+     ],
+     [
+      143.9,
+      -6.3
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "year": 2017,
+    "partner": "Indonesia",
+    "region": "Southeast Asia",
+    "rank": 17,
+    "value_usd_m": 0.296,
+    "tonnes": 54.7,
+    "usd_per_kg": 5.42
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      133.8,
+      -25.3
+     ],
+     [
+      118.0,
+      -2.5
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "year": 2017,
+    "partner": "Qatar",
+    "region": "Middle East",
+    "rank": 18,
+    "value_usd_m": 0.19,
+    "tonnes": 23.6,
+    "usd_per_kg": 8.08
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      133.8,
+      -25.3
+     ],
+     [
+      51.2,
+      25.3
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "year": 2017,
+    "partner": "Vietnam",
+    "region": "Southeast Asia",
+    "rank": 19,
+    "value_usd_m": 0.188,
+    "tonnes": 14.4,
+    "usd_per_kg": 13.03
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      133.8,
+      -25.3
+     ],
+     [
+      108.3,
+      14.1
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "year": 2017,
+    "partner": "Kuwait",
+    "region": "Middle East",
+    "rank": 20,
+    "value_usd_m": 0.125,
+    "tonnes": 14.4,
+    "usd_per_kg": 8.65
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      133.8,
+      -25.3
+     ],
+     [
+      47.5,
+      29.3
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "year": 2017,
+    "partner": "South Korea",
+    "region": "East Asia",
+    "rank": 21,
+    "value_usd_m": 0.122,
+    "tonnes": 18.5,
+    "usd_per_kg": 6.56
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      133.8,
+      -25.3
+     ],
+     [
+      127.9,
+      36.5
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "year": 2018,
+    "partner": "China",
+    "region": "East Asia",
+    "rank": 1,
+    "value_usd_m": 6.308,
+    "tonnes": 568.6,
+    "usd_per_kg": 11.09
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      133.8,
+      -25.3
+     ],
+     [
+      103.0,
+      35.0
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "year": 2018,
+    "partner": "United States",
+    "region": "North America",
+    "rank": 2,
+    "value_usd_m": 4.232,
+    "tonnes": 435.2,
+    "usd_per_kg": 9.72
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      133.8,
+      -25.3
+     ],
+     [
+      -98.6,
+      39.8
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "year": 2018,
+    "partner": "Singapore",
+    "region": "Southeast Asia",
+    "rank": 3,
+    "value_usd_m": 3.429,
+    "tonnes": 474.1,
+    "usd_per_kg": 7.23
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      133.8,
+      -25.3
+     ],
+     [
+      103.8,
+      1.35
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "year": 2018,
+    "partner": "Hong Kong",
+    "region": "East Asia",
+    "rank": 4,
+    "value_usd_m": 2.809,
+    "tonnes": 238.5,
+    "usd_per_kg": 11.78
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      133.8,
+      -25.3
+     ],
+     [
+      114.2,
+      22.3
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "year": 2018,
+    "partner": "Malaysia",
+    "region": "Southeast Asia",
+    "rank": 5,
+    "value_usd_m": 1.975,
+    "tonnes": 311.7,
+    "usd_per_kg": 6.34
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      133.8,
+      -25.3
+     ],
+     [
+      101.9,
+      4.2
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "year": 2018,
+    "partner": "United Kingdom",
+    "region": "Europe",
+    "rank": 6,
+    "value_usd_m": 1.843,
+    "tonnes": 342.4,
+    "usd_per_kg": 5.38
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      133.8,
+      -25.3
+     ],
+     [
+      -2.0,
+      54.0
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "year": 2018,
+    "partner": "Canada",
+    "region": "North America",
+    "rank": 7,
+    "value_usd_m": 1.83,
+    "tonnes": 237.9,
+    "usd_per_kg": 7.69
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      133.8,
+      -25.3
+     ],
+     [
+      -106.3,
+      56.1
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "year": 2018,
+    "partner": "United Arab Emirates",
+    "region": "Middle East",
+    "rank": 8,
+    "value_usd_m": 1.734,
+    "tonnes": 218.7,
+    "usd_per_kg": 7.93
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      133.8,
+      -25.3
+     ],
+     [
+      53.8,
+      23.4
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "year": 2018,
+    "partner": "Japan",
+    "region": "East Asia",
+    "rank": 9,
+    "value_usd_m": 1.234,
+    "tonnes": 111.7,
+    "usd_per_kg": 11.05
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      133.8,
+      -25.3
+     ],
+     [
+      138.3,
+      36.2
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "year": 2018,
+    "partner": "Oman",
+    "region": "Middle East",
+    "rank": 10,
+    "value_usd_m": 1.152,
+    "tonnes": 178.9,
+    "usd_per_kg": 6.44
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      133.8,
+      -25.3
+     ],
+     [
+      55.9,
+      21.5
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "year": 2018,
+    "partner": "Germany",
+    "region": "Europe",
+    "rank": 11,
+    "value_usd_m": 0.831,
+    "tonnes": 46.9,
+    "usd_per_kg": 17.74
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      133.8,
+      -25.3
+     ],
+     [
+      10.4,
+      51.2
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "year": 2018,
+    "partner": "Mauritius",
+    "region": "Africa",
+    "rank": 12,
+    "value_usd_m": 0.749,
+    "tonnes": 102.5,
+    "usd_per_kg": 7.31
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      133.8,
+      -25.3
+     ],
+     [
+      57.6,
+      -20.3
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "year": 2018,
+    "partner": "Philippines",
+    "region": "Southeast Asia",
+    "rank": 13,
+    "value_usd_m": 0.602,
+    "tonnes": 84.5,
+    "usd_per_kg": 7.13
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      133.8,
+      -25.3
+     ],
+     [
+      121.8,
+      12.9
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "year": 2018,
+    "partner": "Saudi Arabia",
+    "region": "Middle East",
+    "rank": 14,
+    "value_usd_m": 0.528,
+    "tonnes": 65.6,
+    "usd_per_kg": 8.05
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      133.8,
+      -25.3
+     ],
+     [
+      45.1,
+      23.9
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "year": 2018,
+    "partner": "Indonesia",
+    "region": "Southeast Asia",
+    "rank": 15,
+    "value_usd_m": 0.454,
+    "tonnes": 91.4,
+    "usd_per_kg": 4.97
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      133.8,
+      -25.3
+     ],
+     [
+      118.0,
+      -2.5
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "year": 2018,
+    "partner": "Papua New Guinea",
+    "region": "Pacific",
+    "rank": 16,
+    "value_usd_m": 0.358,
+    "tonnes": 55.7,
+    "usd_per_kg": 6.43
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      133.8,
+      -25.3
+     ],
+     [
+      143.9,
+      -6.3
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "year": 2018,
+    "partner": "Vietnam",
+    "region": "Southeast Asia",
+    "rank": 17,
+    "value_usd_m": 0.305,
+    "tonnes": 11.8,
+    "usd_per_kg": 25.88
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      133.8,
+      -25.3
+     ],
+     [
+      108.3,
+      14.1
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "year": 2018,
+    "partner": "Thailand",
+    "region": "Southeast Asia",
+    "rank": 18,
+    "value_usd_m": 0.289,
+    "tonnes": 54.1,
+    "usd_per_kg": 5.34
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      133.8,
+      -25.3
+     ],
+     [
+      101.0,
+      15.9
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "year": 2018,
+    "partner": "South Korea",
+    "region": "East Asia",
+    "rank": 19,
+    "value_usd_m": 0.204,
+    "tonnes": 31.4,
+    "usd_per_kg": 6.49
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      133.8,
+      -25.3
+     ],
+     [
+      127.9,
+      36.5
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "year": 2018,
+    "partner": "Qatar",
+    "region": "Middle East",
+    "rank": 20,
+    "value_usd_m": 0.184,
+    "tonnes": 19.1,
+    "usd_per_kg": 9.61
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      133.8,
+      -25.3
+     ],
+     [
+      51.2,
+      25.3
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "year": 2018,
+    "partner": "Kuwait",
+    "region": "Middle East",
+    "rank": 21,
+    "value_usd_m": 0.159,
+    "tonnes": 14.8,
+    "usd_per_kg": 10.75
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      133.8,
+      -25.3
+     ],
+     [
+      47.5,
+      29.3
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "year": 2019,
+    "partner": "China",
+    "region": "East Asia",
+    "rank": 1,
+    "value_usd_m": 10.465,
+    "tonnes": 629.7,
+    "usd_per_kg": 16.62
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      133.8,
+      -25.3
+     ],
+     [
+      103.0,
+      35.0
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "year": 2019,
+    "partner": "United States",
+    "region": "North America",
+    "rank": 2,
+    "value_usd_m": 5.953,
+    "tonnes": 712.0,
+    "usd_per_kg": 8.36
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      133.8,
+      -25.3
+     ],
+     [
+      -98.6,
+      39.8
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "year": 2019,
+    "partner": "Singapore",
+    "region": "Southeast Asia",
+    "rank": 3,
+    "value_usd_m": 2.811,
+    "tonnes": 419.6,
+    "usd_per_kg": 6.7
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      133.8,
+      -25.3
+     ],
+     [
+      103.8,
+      1.35
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "year": 2019,
+    "partner": "Canada",
+    "region": "North America",
+    "rank": 4,
+    "value_usd_m": 2.575,
+    "tonnes": 311.0,
+    "usd_per_kg": 8.28
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      133.8,
+      -25.3
+     ],
+     [
+      -106.3,
+      56.1
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "year": 2019,
+    "partner": "Hong Kong",
+    "region": "East Asia",
+    "rank": 5,
+    "value_usd_m": 1.943,
+    "tonnes": 215.4,
+    "usd_per_kg": 9.02
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      133.8,
+      -25.3
+     ],
+     [
+      114.2,
+      22.3
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "year": 2019,
+    "partner": "Malaysia",
+    "region": "Southeast Asia",
+    "rank": 6,
+    "value_usd_m": 1.479,
+    "tonnes": 237.0,
+    "usd_per_kg": 6.24
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      133.8,
+      -25.3
+     ],
+     [
+      101.9,
+      4.2
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "year": 2019,
+    "partner": "United Arab Emirates",
+    "region": "Middle East",
+    "rank": 7,
+    "value_usd_m": 1.399,
+    "tonnes": 159.7,
+    "usd_per_kg": 8.76
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      133.8,
+      -25.3
+     ],
+     [
+      53.8,
+      23.4
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "year": 2019,
+    "partner": "Oman",
+    "region": "Middle East",
+    "rank": 8,
+    "value_usd_m": 1.363,
+    "tonnes": 200.5,
+    "usd_per_kg": 6.8
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      133.8,
+      -25.3
+     ],
+     [
+      55.9,
+      21.5
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "year": 2019,
+    "partner": "United Kingdom",
+    "region": "Europe",
+    "rank": 9,
+    "value_usd_m": 1.335,
+    "tonnes": 205.0,
+    "usd_per_kg": 6.52
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      133.8,
+      -25.3
+     ],
+     [
+      -2.0,
+      54.0
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "year": 2019,
+    "partner": "Japan",
+    "region": "East Asia",
+    "rank": 10,
+    "value_usd_m": 1.302,
+    "tonnes": 142.5,
+    "usd_per_kg": 9.14
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      133.8,
+      -25.3
+     ],
+     [
+      138.3,
+      36.2
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "year": 2019,
+    "partner": "Vietnam",
+    "region": "Southeast Asia",
+    "rank": 11,
+    "value_usd_m": 1.1,
+    "tonnes": 33.8,
+    "usd_per_kg": 32.58
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      133.8,
+      -25.3
+     ],
+     [
+      108.3,
+      14.1
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "year": 2019,
+    "partner": "Mauritius",
+    "region": "Africa",
+    "rank": 12,
+    "value_usd_m": 0.79,
+    "tonnes": 111.8,
+    "usd_per_kg": 7.07
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      133.8,
+      -25.3
+     ],
+     [
+      57.6,
+      -20.3
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "year": 2019,
+    "partner": "Philippines",
+    "region": "Southeast Asia",
+    "rank": 13,
+    "value_usd_m": 0.608,
+    "tonnes": 87.1,
+    "usd_per_kg": 6.98
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      133.8,
+      -25.3
+     ],
+     [
+      121.8,
+      12.9
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "year": 2019,
+    "partner": "Saudi Arabia",
+    "region": "Middle East",
+    "rank": 14,
+    "value_usd_m": 0.607,
+    "tonnes": 63.4,
+    "usd_per_kg": 9.57
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      133.8,
+      -25.3
+     ],
+     [
+      45.1,
+      23.9
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "year": 2019,
+    "partner": "South Korea",
+    "region": "East Asia",
+    "rank": 15,
+    "value_usd_m": 0.602,
+    "tonnes": 36.2,
+    "usd_per_kg": 16.65
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      133.8,
+      -25.3
+     ],
+     [
+      127.9,
+      36.5
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "year": 2019,
+    "partner": "Germany",
+    "region": "Europe",
+    "rank": 16,
+    "value_usd_m": 0.305,
+    "tonnes": 20.6,
+    "usd_per_kg": 14.86
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      133.8,
+      -25.3
+     ],
+     [
+      10.4,
+      51.2
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "year": 2019,
+    "partner": "Qatar",
+    "region": "Middle East",
+    "rank": 17,
+    "value_usd_m": 0.21,
+    "tonnes": 17.7,
+    "usd_per_kg": 11.87
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      133.8,
+      -25.3
+     ],
+     [
+      51.2,
+      25.3
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "year": 2019,
+    "partner": "Indonesia",
+    "region": "Southeast Asia",
+    "rank": 18,
+    "value_usd_m": 0.156,
+    "tonnes": 30.7,
+    "usd_per_kg": 5.09
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      133.8,
+      -25.3
+     ],
+     [
+      118.0,
+      -2.5
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "year": 2019,
+    "partner": "Thailand",
+    "region": "Southeast Asia",
+    "rank": 19,
+    "value_usd_m": 0.156,
+    "tonnes": 32.0,
+    "usd_per_kg": 4.89
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      133.8,
+      -25.3
+     ],
+     [
+      101.0,
+      15.9
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "year": 2019,
+    "partner": "Papua New Guinea",
+    "region": "Pacific",
+    "rank": 20,
+    "value_usd_m": 0.082,
+    "tonnes": 15.0,
+    "usd_per_kg": 5.44
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      133.8,
+      -25.3
+     ],
+     [
+      143.9,
+      -6.3
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "year": 2019,
+    "partner": "Kuwait",
+    "region": "Middle East",
+    "rank": 21,
+    "value_usd_m": 0.077,
+    "tonnes": 5.1,
+    "usd_per_kg": 14.93
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      133.8,
+      -25.3
+     ],
+     [
+      47.5,
+      29.3
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "year": 2020,
+    "partner": "China",
+    "region": "East Asia",
+    "rank": 1,
+    "value_usd_m": 10.131,
+    "tonnes": 563.9,
+    "usd_per_kg": 17.97
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      133.8,
+      -25.3
+     ],
+     [
+      103.0,
+      35.0
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "year": 2020,
+    "partner": "United States",
+    "region": "North America",
+    "rank": 2,
+    "value_usd_m": 4.313,
+    "tonnes": 363.9,
+    "usd_per_kg": 11.85
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      133.8,
+      -25.3
+     ],
+     [
+      -98.6,
+      39.8
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "year": 2020,
+    "partner": "Singapore",
+    "region": "Southeast Asia",
+    "rank": 3,
+    "value_usd_m": 4.085,
+    "tonnes": 576.7,
+    "usd_per_kg": 7.08
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      133.8,
+      -25.3
+     ],
+     [
+      103.8,
+      1.35
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "year": 2020,
+    "partner": "Japan",
+    "region": "East Asia",
+    "rank": 4,
+    "value_usd_m": 3.52,
+    "tonnes": 254.5,
+    "usd_per_kg": 13.83
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      133.8,
+      -25.3
+     ],
+     [
+      138.3,
+      36.2
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "year": 2020,
+    "partner": "Canada",
+    "region": "North America",
+    "rank": 5,
+    "value_usd_m": 2.516,
+    "tonnes": 278.8,
+    "usd_per_kg": 9.03
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      133.8,
+      -25.3
+     ],
+     [
+      -106.3,
+      56.1
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "year": 2020,
+    "partner": "United Arab Emirates",
+    "region": "Middle East",
+    "rank": 6,
+    "value_usd_m": 2.33,
+    "tonnes": 237.9,
+    "usd_per_kg": 9.79
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      133.8,
+      -25.3
+     ],
+     [
+      53.8,
+      23.4
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "year": 2020,
+    "partner": "Hong Kong",
+    "region": "East Asia",
+    "rank": 7,
+    "value_usd_m": 2.31,
+    "tonnes": 300.5,
+    "usd_per_kg": 7.69
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      133.8,
+      -25.3
+     ],
+     [
+      114.2,
+      22.3
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "year": 2020,
+    "partner": "Malaysia",
+    "region": "Southeast Asia",
+    "rank": 8,
+    "value_usd_m": 1.772,
+    "tonnes": 266.0,
+    "usd_per_kg": 6.66
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      133.8,
+      -25.3
+     ],
+     [
+      101.9,
+      4.2
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "year": 2020,
+    "partner": "Indonesia",
+    "region": "Southeast Asia",
+    "rank": 9,
+    "value_usd_m": 1.374,
+    "tonnes": 368.3,
+    "usd_per_kg": 3.73
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      133.8,
+      -25.3
+     ],
+     [
+      118.0,
+      -2.5
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "year": 2020,
+    "partner": "Oman",
+    "region": "Middle East",
+    "rank": 10,
+    "value_usd_m": 1.201,
+    "tonnes": 163.2,
+    "usd_per_kg": 7.36
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      133.8,
+      -25.3
+     ],
+     [
+      55.9,
+      21.5
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "year": 2020,
+    "partner": "Vietnam",
+    "region": "Southeast Asia",
+    "rank": 11,
+    "value_usd_m": 0.958,
+    "tonnes": 29.5,
+    "usd_per_kg": 32.42
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      133.8,
+      -25.3
+     ],
+     [
+      108.3,
+      14.1
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "year": 2020,
+    "partner": "Philippines",
+    "region": "Southeast Asia",
+    "rank": 12,
+    "value_usd_m": 0.84,
+    "tonnes": 115.1,
+    "usd_per_kg": 7.29
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      133.8,
+      -25.3
+     ],
+     [
+      121.8,
+      12.9
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "year": 2020,
+    "partner": "United Kingdom",
+    "region": "Europe",
+    "rank": 13,
+    "value_usd_m": 0.823,
+    "tonnes": 96.4,
+    "usd_per_kg": 8.54
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      133.8,
+      -25.3
+     ],
+     [
+      -2.0,
+      54.0
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "year": 2020,
+    "partner": "Mauritius",
+    "region": "Africa",
+    "rank": 14,
+    "value_usd_m": 0.751,
+    "tonnes": 110.8,
+    "usd_per_kg": 6.78
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      133.8,
+      -25.3
+     ],
+     [
+      57.6,
+      -20.3
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "year": 2020,
+    "partner": "Qatar",
+    "region": "Middle East",
+    "rank": 15,
+    "value_usd_m": 0.658,
+    "tonnes": 32.7,
+    "usd_per_kg": 20.14
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      133.8,
+      -25.3
+     ],
+     [
+      51.2,
+      25.3
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "year": 2020,
+    "partner": "South Korea",
+    "region": "East Asia",
+    "rank": 16,
+    "value_usd_m": 0.545,
+    "tonnes": 53.9,
+    "usd_per_kg": 10.11
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      133.8,
+      -25.3
+     ],
+     [
+      127.9,
+      36.5
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "year": 2020,
+    "partner": "Kuwait",
+    "region": "Middle East",
+    "rank": 17,
+    "value_usd_m": 0.473,
+    "tonnes": 13.4,
+    "usd_per_kg": 35.25
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      133.8,
+      -25.3
+     ],
+     [
+      47.5,
+      29.3
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "year": 2020,
+    "partner": "Saudi Arabia",
+    "region": "Middle East",
+    "rank": 18,
+    "value_usd_m": 0.465,
+    "tonnes": 46.3,
+    "usd_per_kg": 10.05
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      133.8,
+      -25.3
+     ],
+     [
+      45.1,
+      23.9
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "year": 2020,
+    "partner": "Germany",
+    "region": "Europe",
+    "rank": 19,
+    "value_usd_m": 0.346,
+    "tonnes": 22.8,
+    "usd_per_kg": 15.17
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      133.8,
+      -25.3
+     ],
+     [
+      10.4,
+      51.2
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "year": 2020,
+    "partner": "Papua New Guinea",
+    "region": "Pacific",
+    "rank": 20,
+    "value_usd_m": 0.14,
+    "tonnes": 19.9,
+    "usd_per_kg": 7.01
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      133.8,
+      -25.3
+     ],
+     [
+      143.9,
+      -6.3
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "year": 2020,
+    "partner": "Thailand",
+    "region": "Southeast Asia",
+    "rank": 21,
+    "value_usd_m": 0.131,
+    "tonnes": 14.1,
+    "usd_per_kg": 9.29
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      133.8,
+      -25.3
+     ],
+     [
+      101.0,
+      15.9
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "year": 2021,
+    "partner": "China",
+    "region": "East Asia",
+    "rank": 1,
+    "value_usd_m": 6.584,
+    "tonnes": 333.5,
+    "usd_per_kg": 19.74
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      133.8,
+      -25.3
+     ],
+     [
+      103.0,
+      35.0
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "year": 2021,
+    "partner": "United States",
+    "region": "North America",
+    "rank": 2,
+    "value_usd_m": 5.658,
+    "tonnes": 880.2,
+    "usd_per_kg": 6.43
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      133.8,
+      -25.3
+     ],
+     [
+      -98.6,
+      39.8
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "year": 2021,
+    "partner": "Japan",
+    "region": "East Asia",
+    "rank": 3,
+    "value_usd_m": 4.277,
+    "tonnes": 364.0,
+    "usd_per_kg": 11.75
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      133.8,
+      -25.3
+     ],
+     [
+      138.3,
+      36.2
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "year": 2021,
+    "partner": "Singapore",
+    "region": "Southeast Asia",
+    "rank": 4,
+    "value_usd_m": 3.913,
+    "tonnes": 514.8,
+    "usd_per_kg": 7.6
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      133.8,
+      -25.3
+     ],
+     [
+      103.8,
+      1.35
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "year": 2021,
+    "partner": "Canada",
+    "region": "North America",
+    "rank": 5,
+    "value_usd_m": 3.546,
+    "tonnes": 343.1,
+    "usd_per_kg": 10.34
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      133.8,
+      -25.3
+     ],
+     [
+      -106.3,
+      56.1
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "year": 2021,
+    "partner": "Indonesia",
+    "region": "Southeast Asia",
+    "rank": 6,
+    "value_usd_m": 3.083,
+    "tonnes": 661.2,
+    "usd_per_kg": 4.66
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      133.8,
+      -25.3
+     ],
+     [
+      118.0,
+      -2.5
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "year": 2021,
+    "partner": "United Arab Emirates",
+    "region": "Middle East",
+    "rank": 7,
+    "value_usd_m": 2.588,
+    "tonnes": 231.6,
+    "usd_per_kg": 11.18
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      133.8,
+      -25.3
+     ],
+     [
+      53.8,
+      23.4
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "year": 2021,
+    "partner": "Malaysia",
+    "region": "Southeast Asia",
+    "rank": 8,
+    "value_usd_m": 2.334,
+    "tonnes": 300.5,
+    "usd_per_kg": 7.77
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      133.8,
+      -25.3
+     ],
+     [
+      101.9,
+      4.2
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "year": 2021,
+    "partner": "Hong Kong",
+    "region": "East Asia",
+    "rank": 9,
+    "value_usd_m": 1.973,
+    "tonnes": 191.3,
+    "usd_per_kg": 10.31
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      133.8,
+      -25.3
+     ],
+     [
+      114.2,
+      22.3
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "year": 2021,
+    "partner": "Saudi Arabia",
+    "region": "Middle East",
+    "rank": 10,
+    "value_usd_m": 1.425,
+    "tonnes": 128.8,
+    "usd_per_kg": 11.06
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      133.8,
+      -25.3
+     ],
+     [
+      45.1,
+      23.9
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "year": 2021,
+    "partner": "United Kingdom",
+    "region": "Europe",
+    "rank": 11,
+    "value_usd_m": 1.353,
+    "tonnes": 180.0,
+    "usd_per_kg": 7.52
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      133.8,
+      -25.3
+     ],
+     [
+      -2.0,
+      54.0
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "year": 2021,
+    "partner": "Philippines",
+    "region": "Southeast Asia",
+    "rank": 12,
+    "value_usd_m": 0.83,
+    "tonnes": 104.4,
+    "usd_per_kg": 7.96
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      133.8,
+      -25.3
+     ],
+     [
+      121.8,
+      12.9
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "year": 2021,
+    "partner": "Oman",
+    "region": "Middle East",
+    "rank": 13,
+    "value_usd_m": 0.748,
+    "tonnes": 114.9,
+    "usd_per_kg": 6.51
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      133.8,
+      -25.3
+     ],
+     [
+      55.9,
+      21.5
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "year": 2021,
+    "partner": "Mauritius",
+    "region": "Africa",
+    "rank": 14,
+    "value_usd_m": 0.698,
+    "tonnes": 87.2,
+    "usd_per_kg": 8.0
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      133.8,
+      -25.3
+     ],
+     [
+      57.6,
+      -20.3
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "year": 2021,
+    "partner": "South Korea",
+    "region": "East Asia",
+    "rank": 15,
+    "value_usd_m": 0.646,
+    "tonnes": 45.7,
+    "usd_per_kg": 14.15
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      133.8,
+      -25.3
+     ],
+     [
+      127.9,
+      36.5
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "year": 2021,
+    "partner": "Vietnam",
+    "region": "Southeast Asia",
+    "rank": 16,
+    "value_usd_m": 0.509,
+    "tonnes": 21.4,
+    "usd_per_kg": 23.73
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      133.8,
+      -25.3
+     ],
+     [
+      108.3,
+      14.1
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "year": 2021,
+    "partner": "Germany",
+    "region": "Europe",
+    "rank": 17,
+    "value_usd_m": 0.421,
+    "tonnes": 27.4,
+    "usd_per_kg": 15.36
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      133.8,
+      -25.3
+     ],
+     [
+      10.4,
+      51.2
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "year": 2021,
+    "partner": "Kuwait",
+    "region": "Middle East",
+    "rank": 18,
+    "value_usd_m": 0.351,
+    "tonnes": 16.9,
+    "usd_per_kg": 20.7
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      133.8,
+      -25.3
+     ],
+     [
+      47.5,
+      29.3
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "year": 2021,
+    "partner": "Qatar",
+    "region": "Middle East",
+    "rank": 19,
+    "value_usd_m": 0.302,
+    "tonnes": 16.6,
+    "usd_per_kg": 18.17
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      133.8,
+      -25.3
+     ],
+     [
+      51.2,
+      25.3
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "year": 2021,
+    "partner": "Thailand",
+    "region": "Southeast Asia",
+    "rank": 20,
+    "value_usd_m": 0.274,
+    "tonnes": 49.6,
+    "usd_per_kg": 5.53
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      133.8,
+      -25.3
+     ],
+     [
+      101.0,
+      15.9
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "year": 2021,
+    "partner": "Papua New Guinea",
+    "region": "Pacific",
+    "rank": 21,
+    "value_usd_m": 0.146,
+    "tonnes": 21.2,
+    "usd_per_kg": 6.86
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      133.8,
+      -25.3
+     ],
+     [
+      143.9,
+      -6.3
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "year": 2022,
+    "partner": "United States",
+    "region": "North America",
+    "rank": 1,
+    "value_usd_m": 7.333,
+    "tonnes": 1165.2,
+    "usd_per_kg": 6.29
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      133.8,
+      -25.3
+     ],
+     [
+      -98.6,
+      39.8
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "year": 2022,
+    "partner": "China",
+    "region": "East Asia",
+    "rank": 2,
+    "value_usd_m": 6.189,
+    "tonnes": 301.8,
+    "usd_per_kg": 20.51
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      133.8,
+      -25.3
+     ],
+     [
+      103.0,
+      35.0
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "year": 2022,
+    "partner": "Singapore",
+    "region": "Southeast Asia",
+    "rank": 3,
+    "value_usd_m": 3.696,
+    "tonnes": 553.7,
+    "usd_per_kg": 6.68
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      133.8,
+      -25.3
+     ],
+     [
+      103.8,
+      1.35
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "year": 2022,
+    "partner": "Canada",
+    "region": "North America",
+    "rank": 4,
+    "value_usd_m": 3.542,
+    "tonnes": 371.5,
+    "usd_per_kg": 9.53
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      133.8,
+      -25.3
+     ],
+     [
+      -106.3,
+      56.1
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "year": 2022,
+    "partner": "Japan",
+    "region": "East Asia",
+    "rank": 5,
+    "value_usd_m": 3.26,
+    "tonnes": 321.0,
+    "usd_per_kg": 10.15
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      133.8,
+      -25.3
+     ],
+     [
+      138.3,
+      36.2
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "year": 2022,
+    "partner": "Indonesia",
+    "region": "Southeast Asia",
+    "rank": 6,
+    "value_usd_m": 2.707,
+    "tonnes": 671.9,
+    "usd_per_kg": 4.03
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      133.8,
+      -25.3
+     ],
+     [
+      118.0,
+      -2.5
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "year": 2022,
+    "partner": "Malaysia",
+    "region": "Southeast Asia",
+    "rank": 7,
+    "value_usd_m": 2.19,
+    "tonnes": 357.0,
+    "usd_per_kg": 6.14
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      133.8,
+      -25.3
+     ],
+     [
+      101.9,
+      4.2
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "year": 2022,
+    "partner": "Hong Kong",
+    "region": "East Asia",
+    "rank": 8,
+    "value_usd_m": 2.031,
+    "tonnes": 228.2,
+    "usd_per_kg": 8.9
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      133.8,
+      -25.3
+     ],
+     [
+      114.2,
+      22.3
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "year": 2022,
+    "partner": "United Arab Emirates",
+    "region": "Middle East",
+    "rank": 9,
+    "value_usd_m": 1.851,
+    "tonnes": 189.2,
+    "usd_per_kg": 9.78
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      133.8,
+      -25.3
+     ],
+     [
+      53.8,
+      23.4
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "year": 2022,
+    "partner": "United Kingdom",
+    "region": "Europe",
+    "rank": 10,
+    "value_usd_m": 1.442,
+    "tonnes": 232.7,
+    "usd_per_kg": 6.2
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      133.8,
+      -25.3
+     ],
+     [
+      -2.0,
+      54.0
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "year": 2022,
+    "partner": "Mauritius",
+    "region": "Africa",
+    "rank": 11,
+    "value_usd_m": 0.86,
+    "tonnes": 116.9,
+    "usd_per_kg": 7.36
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      133.8,
+      -25.3
+     ],
+     [
+      57.6,
+      -20.3
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "year": 2022,
+    "partner": "South Korea",
+    "region": "East Asia",
+    "rank": 12,
+    "value_usd_m": 0.842,
+    "tonnes": 48.8,
+    "usd_per_kg": 17.25
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      133.8,
+      -25.3
+     ],
+     [
+      127.9,
+      36.5
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "year": 2022,
+    "partner": "Oman",
+    "region": "Middle East",
+    "rank": 13,
+    "value_usd_m": 0.821,
+    "tonnes": 126.0,
+    "usd_per_kg": 6.52
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      133.8,
+      -25.3
+     ],
+     [
+      55.9,
+      21.5
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "year": 2022,
+    "partner": "Vietnam",
+    "region": "Southeast Asia",
+    "rank": 14,
+    "value_usd_m": 0.793,
+    "tonnes": 32.9,
+    "usd_per_kg": 24.09
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      133.8,
+      -25.3
+     ],
+     [
+      108.3,
+      14.1
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "year": 2022,
+    "partner": "Philippines",
+    "region": "Southeast Asia",
+    "rank": 15,
+    "value_usd_m": 0.72,
+    "tonnes": 99.0,
+    "usd_per_kg": 7.27
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      133.8,
+      -25.3
+     ],
+     [
+      121.8,
+      12.9
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "year": 2022,
+    "partner": "Qatar",
+    "region": "Middle East",
+    "rank": 16,
+    "value_usd_m": 0.398,
+    "tonnes": 21.3,
+    "usd_per_kg": 18.65
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      133.8,
+      -25.3
+     ],
+     [
+      51.2,
+      25.3
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "year": 2022,
+    "partner": "Germany",
+    "region": "Europe",
+    "rank": 17,
+    "value_usd_m": 0.37,
+    "tonnes": 27.7,
+    "usd_per_kg": 13.36
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      133.8,
+      -25.3
+     ],
+     [
+      10.4,
+      51.2
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "year": 2022,
+    "partner": "Thailand",
+    "region": "Southeast Asia",
+    "rank": 18,
+    "value_usd_m": 0.277,
+    "tonnes": 54.3,
+    "usd_per_kg": 5.09
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      133.8,
+      -25.3
+     ],
+     [
+      101.0,
+      15.9
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "year": 2022,
+    "partner": "Kuwait",
+    "region": "Middle East",
+    "rank": 19,
+    "value_usd_m": 0.222,
+    "tonnes": 10.2,
+    "usd_per_kg": 21.81
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      133.8,
+      -25.3
+     ],
+     [
+      47.5,
+      29.3
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "year": 2022,
+    "partner": "Papua New Guinea",
+    "region": "Pacific",
+    "rank": 20,
+    "value_usd_m": 0.197,
+    "tonnes": 29.4,
+    "usd_per_kg": 6.71
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      133.8,
+      -25.3
+     ],
+     [
+      143.9,
+      -6.3
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "year": 2022,
+    "partner": "Saudi Arabia",
+    "region": "Middle East",
+    "rank": 21,
+    "value_usd_m": 0.16,
+    "tonnes": 23.7,
+    "usd_per_kg": 6.77
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      133.8,
+      -25.3
+     ],
+     [
+      45.1,
+      23.9
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "year": 2023,
+    "partner": "United States",
+    "region": "North America",
+    "rank": 1,
+    "value_usd_m": 8.036,
+    "tonnes": 1384.1,
+    "usd_per_kg": 5.81
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      133.8,
+      -25.3
+     ],
+     [
+      -98.6,
+      39.8
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "year": 2023,
+    "partner": "China",
+    "region": "East Asia",
+    "rank": 2,
+    "value_usd_m": 5.806,
+    "tonnes": 271.7,
+    "usd_per_kg": 21.37
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      133.8,
+      -25.3
+     ],
+     [
+      103.0,
+      35.0
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "year": 2023,
+    "partner": "Canada",
+    "region": "North America",
+    "rank": 3,
+    "value_usd_m": 3.329,
+    "tonnes": 335.7,
+    "usd_per_kg": 9.92
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      133.8,
+      -25.3
+     ],
+     [
+      -106.3,
+      56.1
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "year": 2023,
+    "partner": "Japan",
+    "region": "East Asia",
+    "rank": 4,
+    "value_usd_m": 3.01,
+    "tonnes": 249.6,
+    "usd_per_kg": 12.06
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      133.8,
+      -25.3
+     ],
+     [
+      138.3,
+      36.2
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "year": 2023,
+    "partner": "Singapore",
+    "region": "Southeast Asia",
+    "rank": 5,
+    "value_usd_m": 2.443,
+    "tonnes": 349.2,
+    "usd_per_kg": 7.0
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      133.8,
+      -25.3
+     ],
+     [
+      103.8,
+      1.35
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "year": 2023,
+    "partner": "United Kingdom",
+    "region": "Europe",
+    "rank": 6,
+    "value_usd_m": 2.27,
+    "tonnes": 381.0,
+    "usd_per_kg": 5.96
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      133.8,
+      -25.3
+     ],
+     [
+      -2.0,
+      54.0
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "year": 2023,
+    "partner": "Hong Kong",
+    "region": "East Asia",
+    "rank": 7,
+    "value_usd_m": 1.656,
+    "tonnes": 163.7,
+    "usd_per_kg": 10.12
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      133.8,
+      -25.3
+     ],
+     [
+      114.2,
+      22.3
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "year": 2023,
+    "partner": "Malaysia",
+    "region": "Southeast Asia",
+    "rank": 8,
+    "value_usd_m": 1.612,
+    "tonnes": 240.9,
+    "usd_per_kg": 6.69
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      133.8,
+      -25.3
+     ],
+     [
+      101.9,
+      4.2
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "year": 2023,
+    "partner": "Philippines",
+    "region": "Southeast Asia",
+    "rank": 9,
+    "value_usd_m": 1.584,
+    "tonnes": 154.9,
+    "usd_per_kg": 10.23
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      133.8,
+      -25.3
+     ],
+     [
+      121.8,
+      12.9
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "year": 2023,
+    "partner": "United Arab Emirates",
+    "region": "Middle East",
+    "rank": 10,
+    "value_usd_m": 1.542,
+    "tonnes": 170.2,
+    "usd_per_kg": 9.06
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      133.8,
+      -25.3
+     ],
+     [
+      53.8,
+      23.4
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "year": 2023,
+    "partner": "Indonesia",
+    "region": "Southeast Asia",
+    "rank": 11,
+    "value_usd_m": 1.177,
+    "tonnes": 335.0,
+    "usd_per_kg": 3.51
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      133.8,
+      -25.3
+     ],
+     [
+      118.0,
+      -2.5
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "year": 2023,
+    "partner": "Vietnam",
+    "region": "Southeast Asia",
+    "rank": 12,
+    "value_usd_m": 1.143,
+    "tonnes": 38.3,
+    "usd_per_kg": 29.86
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      133.8,
+      -25.3
+     ],
+     [
+      108.3,
+      14.1
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "year": 2023,
+    "partner": "Oman",
+    "region": "Middle East",
+    "rank": 13,
+    "value_usd_m": 0.96,
+    "tonnes": 131.4,
+    "usd_per_kg": 7.3
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      133.8,
+      -25.3
+     ],
+     [
+      55.9,
+      21.5
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "year": 2023,
+    "partner": "South Korea",
+    "region": "East Asia",
+    "rank": 14,
+    "value_usd_m": 0.737,
+    "tonnes": 49.7,
+    "usd_per_kg": 14.82
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      133.8,
+      -25.3
+     ],
+     [
+      127.9,
+      36.5
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "year": 2023,
+    "partner": "Thailand",
+    "region": "Southeast Asia",
+    "rank": 15,
+    "value_usd_m": 0.516,
+    "tonnes": 71.5,
+    "usd_per_kg": 7.22
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      133.8,
+      -25.3
+     ],
+     [
+      101.0,
+      15.9
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "year": 2023,
+    "partner": "Kuwait",
+    "region": "Middle East",
+    "rank": 16,
+    "value_usd_m": 0.392,
+    "tonnes": 22.6,
+    "usd_per_kg": 17.34
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      133.8,
+      -25.3
+     ],
+     [
+      47.5,
+      29.3
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "year": 2023,
+    "partner": "Saudi Arabia",
+    "region": "Middle East",
+    "rank": 17,
+    "value_usd_m": 0.361,
+    "tonnes": 52.1,
+    "usd_per_kg": 6.93
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      133.8,
+      -25.3
+     ],
+     [
+      45.1,
+      23.9
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "year": 2023,
+    "partner": "Mauritius",
+    "region": "Africa",
+    "rank": 18,
+    "value_usd_m": 0.356,
+    "tonnes": 50.1,
+    "usd_per_kg": 7.11
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      133.8,
+      -25.3
+     ],
+     [
+      57.6,
+      -20.3
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "year": 2023,
+    "partner": "Qatar",
+    "region": "Middle East",
+    "rank": 19,
+    "value_usd_m": 0.298,
+    "tonnes": 52.2,
+    "usd_per_kg": 5.72
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      133.8,
+      -25.3
+     ],
+     [
+      51.2,
+      25.3
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "year": 2023,
+    "partner": "Germany",
+    "region": "Europe",
+    "rank": 20,
+    "value_usd_m": 0.143,
+    "tonnes": 12.2,
+    "usd_per_kg": 11.71
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      133.8,
+      -25.3
+     ],
+     [
+      10.4,
+      51.2
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "year": 2023,
+    "partner": "Papua New Guinea",
+    "region": "Pacific",
+    "rank": 21,
+    "value_usd_m": 0.124,
+    "tonnes": 21.5,
+    "usd_per_kg": 5.77
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      133.8,
+      -25.3
+     ],
+     [
+      143.9,
+      -6.3
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "year": 2024,
+    "partner": "United States",
+    "region": "North America",
+    "rank": 1,
+    "value_usd_m": 9.353,
+    "tonnes": 1734.1,
+    "usd_per_kg": 5.39
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      133.8,
+      -25.3
+     ],
+     [
+      -98.6,
+      39.8
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "year": 2024,
+    "partner": "China",
+    "region": "East Asia",
+    "rank": 2,
+    "value_usd_m": 6.872,
+    "tonnes": 338.2,
+    "usd_per_kg": 20.32
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      133.8,
+      -25.3
+     ],
+     [
+      103.0,
+      35.0
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "year": 2024,
+    "partner": "Canada",
+    "region": "North America",
+    "rank": 3,
+    "value_usd_m": 3.924,
+    "tonnes": 411.4,
+    "usd_per_kg": 9.54
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      133.8,
+      -25.3
+     ],
+     [
+      -106.3,
+      56.1
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "year": 2024,
+    "partner": "Japan",
+    "region": "East Asia",
+    "rank": 4,
+    "value_usd_m": 3.348,
+    "tonnes": 285.2,
+    "usd_per_kg": 11.74
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      133.8,
+      -25.3
+     ],
+     [
+      138.3,
+      36.2
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "year": 2024,
+    "partner": "Hong Kong",
+    "region": "East Asia",
+    "rank": 5,
+    "value_usd_m": 2.545,
+    "tonnes": 154.0,
+    "usd_per_kg": 16.53
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      133.8,
+      -25.3
+     ],
+     [
+      114.2,
+      22.3
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "year": 2024,
+    "partner": "Singapore",
+    "region": "Southeast Asia",
+    "rank": 6,
+    "value_usd_m": 2.399,
+    "tonnes": 348.4,
+    "usd_per_kg": 6.89
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      133.8,
+      -25.3
+     ],
+     [
+      103.8,
+      1.35
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "year": 2024,
+    "partner": "Oman",
+    "region": "Middle East",
+    "rank": 7,
+    "value_usd_m": 2.036,
+    "tonnes": 138.4,
+    "usd_per_kg": 14.71
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      133.8,
+      -25.3
+     ],
+     [
+      55.9,
+      21.5
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "year": 2024,
+    "partner": "United Arab Emirates",
+    "region": "Middle East",
+    "rank": 8,
+    "value_usd_m": 1.579,
+    "tonnes": 170.2,
+    "usd_per_kg": 9.28
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      133.8,
+      -25.3
+     ],
+     [
+      53.8,
+      23.4
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "year": 2024,
+    "partner": "Malaysia",
+    "region": "Southeast Asia",
+    "rank": 9,
+    "value_usd_m": 1.528,
+    "tonnes": 237.1,
+    "usd_per_kg": 6.45
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      133.8,
+      -25.3
+     ],
+     [
+      101.9,
+      4.2
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "year": 2024,
+    "partner": "Philippines",
+    "region": "Southeast Asia",
+    "rank": 10,
+    "value_usd_m": 1.335,
+    "tonnes": 213.2,
+    "usd_per_kg": 6.26
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      133.8,
+      -25.3
+     ],
+     [
+      121.8,
+      12.9
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "year": 2024,
+    "partner": "Mauritius",
+    "region": "Africa",
+    "rank": 11,
+    "value_usd_m": 1.319,
+    "tonnes": 103.3,
+    "usd_per_kg": 12.76
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      133.8,
+      -25.3
+     ],
+     [
+      57.6,
+      -20.3
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "year": 2024,
+    "partner": "Indonesia",
+    "region": "Southeast Asia",
+    "rank": 12,
+    "value_usd_m": 0.86,
+    "tonnes": 276.1,
+    "usd_per_kg": 3.11
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      133.8,
+      -25.3
+     ],
+     [
+      118.0,
+      -2.5
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "year": 2024,
+    "partner": "South Korea",
+    "region": "East Asia",
+    "rank": 13,
+    "value_usd_m": 0.845,
+    "tonnes": 72.3,
+    "usd_per_kg": 11.69
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      133.8,
+      -25.3
+     ],
+     [
+      127.9,
+      36.5
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "year": 2024,
+    "partner": "United Kingdom",
+    "region": "Europe",
+    "rank": 14,
+    "value_usd_m": 0.8,
+    "tonnes": 149.6,
+    "usd_per_kg": 5.35
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      133.8,
+      -25.3
+     ],
+     [
+      -2.0,
+      54.0
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "year": 2024,
+    "partner": "Vietnam",
+    "region": "Southeast Asia",
+    "rank": 15,
+    "value_usd_m": 0.661,
+    "tonnes": 23.7,
+    "usd_per_kg": 27.96
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      133.8,
+      -25.3
+     ],
+     [
+      108.3,
+      14.1
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "year": 2024,
+    "partner": "Saudi Arabia",
+    "region": "Middle East",
+    "rank": 16,
+    "value_usd_m": 0.604,
+    "tonnes": 65.8,
+    "usd_per_kg": 9.18
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      133.8,
+      -25.3
+     ],
+     [
+      45.1,
+      23.9
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "year": 2024,
+    "partner": "Thailand",
+    "region": "Southeast Asia",
+    "rank": 17,
+    "value_usd_m": 0.447,
+    "tonnes": 59.4,
+    "usd_per_kg": 7.53
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      133.8,
+      -25.3
+     ],
+     [
+      101.0,
+      15.9
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "year": 2024,
+    "partner": "Qatar",
+    "region": "Middle East",
+    "rank": 18,
+    "value_usd_m": 0.303,
+    "tonnes": 19.7,
+    "usd_per_kg": 15.41
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      133.8,
+      -25.3
+     ],
+     [
+      51.2,
+      25.3
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "year": 2024,
+    "partner": "Papua New Guinea",
+    "region": "Pacific",
+    "rank": 19,
+    "value_usd_m": 0.233,
+    "tonnes": 35.2,
+    "usd_per_kg": 6.6
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      133.8,
+      -25.3
+     ],
+     [
+      143.9,
+      -6.3
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "year": 2024,
+    "partner": "Kuwait",
+    "region": "Middle East",
+    "rank": 20,
+    "value_usd_m": 0.212,
+    "tonnes": 17.1,
+    "usd_per_kg": 12.38
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      133.8,
+      -25.3
+     ],
+     [
+      47.5,
+      29.3
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "year": 2024,
+    "partner": "Germany",
+    "region": "Europe",
+    "rank": 21,
+    "value_usd_m": 0.195,
+    "tonnes": 19.6,
+    "usd_per_kg": 9.96
+   },
+   "geometry": {
+    "type": "LineString",
+    "coordinates": [
+     [
+      133.8,
+      -25.3
+     ],
+     [
+      10.4,
+      51.2
+     ]
+    ]
+   }
+  }
+ ]
+}

@@ -1,0 +1,16 @@
+place,state,date,date_precision,lon,lat,note,species
+Port of Newcastle,NSW,2022-06-01,month,151.78,-32.92,First detection in sentinel hives at the port,Varroa destructor
+Narrabri,NSW,2022-07-07,day,149.78,-30.33,300+ hives destroyed at one property,Varroa destructor
+Coffs Harbour region,NSW,2022-07-26,day,153.11,-30.3,New eradication zones declared,Varroa destructor
+Near Kempsey,NSW,2023-08-01,month,152.83,-31.08,Cluster found by tracing and surveillance,Varroa destructor
+Port of Brisbane,QLD,2024-02-19,day,153.17,-27.38,Different species (V. jacobsoni) in a sentinel hive,Varroa jacobsoni
+"Nangiloc, near Mildura",VIC,2024-08-15,day,142.35,-34.47,"First Victorian detection, during almond pollination",Varroa destructor
+Lockyer Valley,QLD,2025-03-05,day,152.28,-27.55,"First Queensland detection, four properties",Varroa destructor
+Kowen district,ACT,2025-04-04,day,149.26,-35.32,First ACT detection,Varroa destructor
+"Pooginook, Riverland",SA,2025-09-01,month,140.17,-34.15,First South Australian detection,Varroa destructor
+Near Salt Creek,SA,2025-11-20,day,139.65,-36.13,Source unknown,Varroa destructor
+Taratap,SA,2025-11-26,day,139.98,-36.98,Linked to Sellicks Hill and Gumeracha,Varroa destructor
+Sellicks Hill,SA,2025-11-26,day,138.47,-35.33,Linked to Taratap and Gumeracha,Varroa destructor
+Gladstone,QLD,2026-08-01,month,151.26,-23.84,First detection in central Queensland,Varroa destructor
+El Arish & Cardwell,QLD,2026-09-07,day,146.0,-17.81,Northernmost detection in Australia,Varroa destructor
+Blackwater,QLD,2026-09-10,day,148.88,-23.58,Central Highlands detection,Varroa destructor

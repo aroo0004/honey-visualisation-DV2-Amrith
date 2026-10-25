@@ -1,0 +1,85 @@
+{
+  "$schema": "https://vega.github.io/schema/vega/v5.json",
+  "description": "Treemap (Vega): economic contribution of honey bee pollination in 2020-21 for the three most bee-dependent crops in each state. Rectangle area = $ million.",
+  "padding": 4,
+  "autosize": "none",
+  "signals": [
+    {"name": "width", "init": "max(containerSize()[0], 320) - 8", "on": [{"events": "window:resize", "update": "max(containerSize()[0], 320) - 8"}]},
+    {"name": "height", "value": 420},
+    {"name": "hoverId", "value": null, "on": [
+      {"events": "@leaf:pointerover", "update": "datum.id"},
+      {"events": "@leaf:pointerout", "update": "null"}
+    ]}
+  ],
+  "data": [
+    {
+      "name": "tree",
+      "url": "data/pollination_tree.json",
+      "transform": [
+        {"type": "stratify", "key": "id", "parentKey": "parent"},
+        {"type": "treemap", "field": "value", "sort": {"field": "value"}, "round": true, "method": "squarify", "ratio": 1.4, "paddingInner": 2, "paddingOuter": 0, "paddingTop": 22, "size": [{"signal": "width"}, {"signal": "height"}]}
+      ]
+    },
+    {"name": "states", "source": "tree", "transform": [{"type": "filter", "expr": "datum.depth === 1"}]},
+    {"name": "crops", "source": "tree", "transform": [{"type": "filter", "expr": "datum.depth === 2"}]},
+    {"name": "stateTotals", "source": "crops", "transform": [{"type": "aggregate", "groupby": ["abbr"], "fields": ["value"], "ops": ["sum"], "as": ["total"]}]}
+  ],
+  "scales": [
+    {
+      "name": "color",
+      "type": "ordinal",
+      "domain": ["NSW", "VIC", "WA", "QLD", "SA", "TAS", "NT"],
+      "range": ["#c9780f", "#5b7f3a", "#3d6f8e", "#a0452a", "#7a5a8c", "#2f8f83", "#b58b2a"]
+    }
+  ],
+  "marks": [
+    {
+      "type": "rect",
+      "from": {"data": "states"},
+      "encode": {
+        "enter": {"fill": {"value": "#fffaf0"}, "stroke": {"value": "#e7d9bf"}},
+        "update": {"x": {"field": "x0"}, "y": {"field": "y0"}, "x2": {"field": "x1"}, "y2": {"field": "y1"}}
+      }
+    },
+    {
+      "type": "text",
+      "from": {"data": "states"},
+      "encode": {
+        "enter": {"font": {"value": "Source Sans 3, sans-serif"}, "fontSize": {"value": 13}, "fontWeight": {"value": 700}, "fill": {"scale": "color", "field": "abbr"}, "baseline": {"value": "top"}},
+        "update": {
+          "x": {"signal": "datum.x0 + 4"},
+          "y": {"signal": "datum.y0 + 4"},
+          "text": {"signal": "(datum.x1 - datum.x0) > 70 ? datum.abbr + ' · $' + format(data('stateTotals')[indexof(pluck(data('stateTotals'), 'abbr'), datum.abbr)].total, ',.0f') + 'm' : datum.abbr"}
+        }
+      }
+    },
+    {
+      "type": "rect",
+      "name": "leaf",
+      "from": {"data": "crops"},
+      "encode": {
+        "enter": {"fill": {"scale": "color", "field": "abbr"}, "stroke": {"value": "#fffaf0"}, "cursor": {"value": "pointer"},
+          "tooltip": {"signal": "{'State': datum.abbr, 'Crop': datum.name, 'Value of honey bee pollination': '$' + format(datum.value, ',.1f') + ' million (2020-21)'}"}},
+        "update": {
+          "x": {"field": "x0"}, "y": {"field": "y0"}, "x2": {"field": "x1"}, "y2": {"field": "y1"},
+          "fillOpacity": {"signal": "hoverId === null || hoverId === datum.id ? 0.92 : 0.45"}
+        }
+      }
+    },
+    {
+      "type": "text",
+      "from": {"data": "crops"},
+      "interactive": false,
+      "encode": {
+        "enter": {"font": {"value": "Source Sans 3, sans-serif"}, "fill": {"value": "#ffffff"}, "baseline": {"value": "top"}},
+        "update": {
+          "x": {"signal": "datum.x0 + 5"},
+          "y": {"signal": "datum.y0 + 5"},
+          "fontSize": {"signal": "(datum.x1 - datum.x0) > 110 ? 13 : 10"},
+          "fontWeight": {"value": 600},
+          "text": {"signal": "(datum.x1 - datum.x0) > 54 && (datum.y1 - datum.y0) > 30 ? [datum.name, '$' + format(datum.value, ',.0f') + 'm'] : ''"}
+        }
+      }
+    }
+  ]
+}

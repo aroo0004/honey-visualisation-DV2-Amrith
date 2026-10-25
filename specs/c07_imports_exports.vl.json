@@ -1,0 +1,214 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "Diverging bar chart: honey imports (below zero, by region of origin) vs exports (above zero), years ending 30 June 2019-2023.",
+  "data": {
+    "url": "data/imports_exports.csv",
+    "format": {
+      "parse": {
+        "year": "number",
+        "tonnes": "number"
+      }
+    }
+  },
+  "width": "container",
+  "height": 300,
+  "layer": [
+    {
+      "mark": {
+        "type": "bar",
+        "width": {
+          "band": 0.6
+        }
+      },
+      "encoding": {
+        "x": {
+          "field": "year",
+          "type": "ordinal",
+          "title": "Year ending 30 June",
+          "axis": {
+            "labelAngle": 0,
+            "orient": "bottom"
+          }
+        },
+        "y": {
+          "field": "tonnes",
+          "type": "quantitative",
+          "title": "← Imported      Tonnes      Exported →",
+          "axis": {
+            "labelExpr": "format(abs(datum.value), ',')",
+            "gridColor": "#efe6d6"
+          },
+          "scale": {
+            "domain": [
+              -10000,
+              4000
+            ]
+          }
+        },
+        "color": {
+          "field": "region",
+          "type": "nominal",
+          "title": "Origin / destination",
+          "scale": {
+            "domain": [
+              "All destinations",
+              "Asia",
+              "New Zealand",
+              "Americas",
+              "Other"
+            ],
+            "range": [
+              "#c9780f",
+              "#7a5a8c",
+              "#3d6f8e",
+              "#a0452a",
+              "#b9ab95"
+            ]
+          },
+          "legend": {
+            "orient": "right"
+          }
+        },
+        "order": {
+          "field": "region"
+        },
+        "tooltip": [
+          {
+            "field": "year",
+            "title": "Year ending June"
+          },
+          {
+            "field": "flow",
+            "title": "Flow"
+          },
+          {
+            "field": "region",
+            "title": "Region"
+          },
+          {
+            "field": "abs_t",
+            "title": "Tonnes",
+            "format": ","
+          }
+        ]
+      },
+      "transform": [
+        {
+          "calculate": "abs(datum.tonnes)",
+          "as": "abs_t"
+        }
+      ]
+    },
+    {
+      "data": {
+        "values": [
+          {}
+        ]
+      },
+      "mark": {
+        "type": "rule",
+        "color": "#2b2118"
+      },
+      "encoding": {
+        "y": {
+          "datum": 0
+        }
+      }
+    },
+    {
+      "transform": [
+        {
+          "aggregate": [
+            {
+              "op": "sum",
+              "field": "tonnes",
+              "as": "total"
+            }
+          ],
+          "groupby": [
+            "year",
+            "flow"
+          ]
+        },
+        {
+          "calculate": "format(abs(datum.total), ',') + ' t'",
+          "as": "t"
+        },
+        {
+          "filter": "datum.total < 0"
+        }
+      ],
+      "mark": {
+        "type": "text",
+        "fontWeight": 600,
+        "fontSize": 11,
+        "color": "#2b2118",
+        "baseline": "top",
+        "dy": 4
+      },
+      "encoding": {
+        "x": {
+          "field": "year",
+          "type": "ordinal"
+        },
+        "y": {
+          "field": "total",
+          "type": "quantitative"
+        },
+        "text": {
+          "field": "t"
+        }
+      }
+    },
+    {
+      "transform": [
+        {
+          "aggregate": [
+            {
+              "op": "sum",
+              "field": "tonnes",
+              "as": "total"
+            }
+          ],
+          "groupby": [
+            "year",
+            "flow"
+          ]
+        },
+        {
+          "calculate": "format(abs(datum.total), ',') + ' t'",
+          "as": "t"
+        },
+        {
+          "filter": "datum.total > 0"
+        }
+      ],
+      "mark": {
+        "type": "text",
+        "fontWeight": 600,
+        "fontSize": 11,
+        "color": "#2b2118",
+        "baseline": "bottom",
+        "dy": -4
+      },
+      "encoding": {
+        "x": {
+          "field": "year",
+          "type": "ordinal"
+        },
+        "y": {
+          "field": "total",
+          "type": "quantitative"
+        },
+        "text": {
+          "field": "t"
+        }
+      }
+    }
+  ],
+  "config": {
+    "view": {
+      "stroke": null
+    }
+  }
+}

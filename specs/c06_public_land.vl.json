@@ -1,0 +1,201 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "Proportional symbol map: apiary sites on public land (circle size) and share of commercial honey production that depends on public land (colour).",
+  "width": "container",
+  "height": 380,
+  "projection": {
+    "type": "conicEqualArea",
+    "parallels": [
+      -18,
+      -36
+    ],
+    "rotate": [
+      -132,
+      0
+    ]
+  },
+  "layer": [
+    {
+      "data": {
+        "url": "https://cdn.jsdelivr.net/gh/codeforgermany/click_that_hood@main/public/data/australia.geojson",
+        "format": {
+          "type": "json",
+          "property": "features"
+        }
+      },
+      "mark": {
+        "type": "geoshape",
+        "fill": "#efe6d6",
+        "stroke": "#fffaf0",
+        "strokeWidth": 1.2
+      },
+      "transform": [
+        {
+          "filter": "datum.properties.name != 'Other Territories'"
+        }
+      ]
+    },
+    {
+      "data": {
+        "url": "data/states.csv",
+        "format": {
+          "parse": {
+            "area_km2": "number",
+            "lon": "number",
+            "lat": "number",
+            "commercial_beekeepers_2023": "number",
+            "recreational_beekeepers_2023": "number",
+            "beekeepers_2023": "number",
+            "hives_2023": "number",
+            "hives_per_1000km2_2023": "number",
+            "hives_per_beekeeper_2023": "number",
+            "beekeepers_2018": "number",
+            "hives_2018": "number",
+            "public_land_apiary_sites": "number",
+            "public_land_share_pct": "number"
+          }
+        }
+      },
+      "transform": [
+        {
+          "filter": "isValid(datum.public_land_apiary_sites) && datum.public_land_apiary_sites > 0"
+        },
+        {
+          "calculate": "isValid(datum.public_land_share_pct) ? datum.public_land_share_pct + '%' : 'Significant (not quantified)'",
+          "as": "share_label"
+        }
+      ],
+      "encoding": {
+        "longitude": {
+          "field": "lon",
+          "type": "quantitative"
+        },
+        "latitude": {
+          "field": "lat",
+          "type": "quantitative"
+        }
+      },
+      "layer": [
+        {
+          "mark": {
+            "type": "circle",
+            "opacity": 0.9,
+            "stroke": "#fffaf0",
+            "strokeWidth": 1.5,
+            "invalid": null
+          },
+          "encoding": {
+            "size": {
+              "field": "public_land_apiary_sites",
+              "type": "quantitative",
+              "title": "Apiary sites on public land",
+              "scale": {
+                "range": [
+                  60,
+                  2600
+                ]
+              },
+              "legend": {
+                "orient": "bottom-left",
+                "values": [
+                  500,
+                  4000,
+                  8500
+                ],
+                "symbolFillColor": "#d9c7a6",
+                "symbolStrokeColor": "#8a4a0b"
+              }
+            },
+            "color": {
+              "condition": {
+                "test": "!isValid(datum.public_land_share_pct)",
+                "value": "#b9ab95"
+              },
+              "field": "public_land_share_pct",
+              "type": "quantitative",
+              "title": "Honey relying on public land (%)",
+              "scale": {
+                "domain": [
+                  40,
+                  90
+                ],
+                "range": [
+                  "#f7d27a",
+                  "#8a4a0b"
+                ]
+              },
+              "legend": {
+                "orient": "bottom-right",
+                "gradientLength": 140
+              }
+            },
+            "tooltip": [
+              {
+                "field": "state",
+                "title": "State"
+              },
+              {
+                "field": "public_land_apiary_sites",
+                "title": "Public-land apiary sites",
+                "format": ","
+              },
+              {
+                "field": "share_label",
+                "title": "Production & hive build-up from public land"
+              }
+            ]
+          }
+        },
+        {
+          "mark": {
+            "type": "text",
+            "fontWeight": 600,
+            "fontSize": 12,
+            "color": "#2b2118",
+            "dy": 0
+          },
+          "encoding": {
+            "text": {
+              "field": "abbr"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "data": {
+        "values": [
+          {
+            "lon": 113.5,
+            "lat": -37.5,
+            "t": "Grey = SA: share 'significant' but not measured"
+          }
+        ]
+      },
+      "mark": {
+        "type": "text",
+        "align": "left",
+        "fontSize": 10,
+        "color": "#6b5d4f"
+      },
+      "encoding": {
+        "longitude": {
+          "field": "lon",
+          "type": "quantitative"
+        },
+        "latitude": {
+          "field": "lat",
+          "type": "quantitative"
+        },
+        "text": {
+          "field": "t"
+        }
+      }
+    }
+  ],
+  "config": {
+    "view": {
+      "stroke": null
+    }
+  }
+}

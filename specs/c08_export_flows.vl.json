@@ -1,0 +1,351 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "Flow map of Australian natural honey exports (HS 0409) to the 21 largest buyers, 2015-2024. Line width and circle size = export value (US$). Year chosen with a slider.",
+  "width": "container",
+  "height": 430,
+  "params": [
+    {
+      "name": "yr",
+      "value": 2024,
+      "bind": {
+        "input": "range",
+        "min": 2015,
+        "max": 2024,
+        "step": 1,
+        "name": "Year: "
+      }
+    }
+  ],
+  "projection": {
+    "type": "equalEarth",
+    "rotate": [
+      -150,
+      0
+    ]
+  },
+  "layer": [
+    {
+      "data": {
+        "sphere": true
+      },
+      "mark": {
+        "type": "geoshape",
+        "fill": "#f3f8fb",
+        "stroke": "#dde7ee"
+      }
+    },
+    {
+      "data": {
+        "url": "https://cdn.jsdelivr.net/npm/vega-datasets@2/data/world-110m.json",
+        "format": {
+          "type": "topojson",
+          "feature": "countries"
+        }
+      },
+      "mark": {
+        "type": "geoshape",
+        "fill": "#ece4d6",
+        "stroke": "#fffaf0",
+        "strokeWidth": 0.5
+      }
+    },
+    {
+      "data": {
+        "url": "data/export_flows.geojson",
+        "format": {
+          "type": "json",
+          "property": "features"
+        }
+      },
+      "transform": [
+        {
+          "filter": "datum.properties.year == yr"
+        }
+      ],
+      "mark": {
+        "type": "geoshape",
+        "filled": false,
+        "strokeCap": "round",
+        "opacity": 0.75
+      },
+      "encoding": {
+        "strokeWidth": {
+          "field": "properties.value_usd_m",
+          "type": "quantitative",
+          "scale": {
+            "domain": [
+              0,
+              10.5
+            ],
+            "range": [
+              0.5,
+              9
+            ]
+          },
+          "legend": null
+        },
+        "stroke": {
+          "field": "properties.region",
+          "type": "nominal",
+          "title": "Buyer region",
+          "scale": {
+            "domain": [
+              "East Asia",
+              "Southeast Asia",
+              "North America",
+              "Middle East",
+              "Europe",
+              "Africa",
+              "Pacific"
+            ],
+            "range": [
+              "#c9780f",
+              "#eba92b",
+              "#3d6f8e",
+              "#a0452a",
+              "#7a5a8c",
+              "#2f8f83",
+              "#5b7f3a"
+            ]
+          },
+          "legend": {
+            "orient": "bottom",
+            "direction": "horizontal",
+            "columns": 4
+          }
+        },
+        "tooltip": [
+          {
+            "field": "properties.partner",
+            "title": "Destination"
+          },
+          {
+            "field": "properties.year",
+            "title": "Year"
+          },
+          {
+            "field": "properties.value_usd_m",
+            "title": "Value (US$ million)",
+            "format": ".2f"
+          },
+          {
+            "field": "properties.tonnes",
+            "title": "Tonnes",
+            "format": ",.0f"
+          },
+          {
+            "field": "properties.rank",
+            "title": "Rank"
+          }
+        ]
+      }
+    },
+    {
+      "data": {
+        "url": "data/exports_by_partner.csv",
+        "format": {
+          "parse": {
+            "year": "number",
+            "rank": "number",
+            "value_usd_m": "number",
+            "tonnes": "number",
+            "usd_per_kg": "number",
+            "lon": "number",
+            "lat": "number"
+          }
+        }
+      },
+      "transform": [
+        {
+          "filter": "datum.year == yr"
+        }
+      ],
+      "layer": [
+        {
+          "mark": {
+            "type": "circle",
+            "opacity": 0.9,
+            "stroke": "#fffaf0",
+            "strokeWidth": 1
+          },
+          "encoding": {
+            "longitude": {
+              "field": "lon",
+              "type": "quantitative"
+            },
+            "latitude": {
+              "field": "lat",
+              "type": "quantitative"
+            },
+            "size": {
+              "field": "value_usd_m",
+              "type": "quantitative",
+              "scale": {
+                "domain": [
+                  0,
+                  10.5
+                ],
+                "range": [
+                  10,
+                  700
+                ]
+              },
+              "title": "Value (US$ m)",
+              "legend": {
+                "orient": "bottom-left",
+                "values": [
+                  1,
+                  5,
+                  10
+                ],
+                "symbolFillColor": "#d9c7a6",
+                "symbolStrokeColor": "#8a4a0b"
+              }
+            },
+            "color": {
+              "field": "region",
+              "type": "nominal",
+              "scale": {
+                "domain": [
+                  "East Asia",
+                  "Southeast Asia",
+                  "North America",
+                  "Middle East",
+                  "Europe",
+                  "Africa",
+                  "Pacific"
+                ],
+                "range": [
+                  "#c9780f",
+                  "#eba92b",
+                  "#3d6f8e",
+                  "#a0452a",
+                  "#7a5a8c",
+                  "#2f8f83",
+                  "#5b7f3a"
+                ]
+              },
+              "legend": null
+            },
+            "tooltip": [
+              {
+                "field": "partner",
+                "title": "Destination"
+              },
+              {
+                "field": "value_usd_m",
+                "title": "Value (US$ million)",
+                "format": ".2f"
+              },
+              {
+                "field": "tonnes",
+                "title": "Tonnes",
+                "format": ",.0f"
+              },
+              {
+                "field": "usd_per_kg",
+                "title": "US$ per kg",
+                "format": "$.2f"
+              }
+            ]
+          }
+        },
+        {
+          "transform": [
+            {
+              "filter": "datum.rank <= 5"
+            }
+          ],
+          "mark": {
+            "type": "text",
+            "fontWeight": 600,
+            "fontSize": 12,
+            "dy": -14,
+            "color": "#2b2118"
+          },
+          "encoding": {
+            "longitude": {
+              "field": "lon",
+              "type": "quantitative"
+            },
+            "latitude": {
+              "field": "lat",
+              "type": "quantitative"
+            },
+            "text": {
+              "field": "partner"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "data": {
+        "values": [
+          {
+            "lon": 133.8,
+            "lat": -25.3
+          }
+        ]
+      },
+      "mark": {
+        "type": "point",
+        "shape": "diamond",
+        "filled": true,
+        "size": 160,
+        "color": "#2b2118"
+      },
+      "encoding": {
+        "longitude": {
+          "field": "lon",
+          "type": "quantitative"
+        },
+        "latitude": {
+          "field": "lat",
+          "type": "quantitative"
+        }
+      }
+    },
+    {
+      "data": {
+        "url": "data/exports_total.csv",
+        "format": {
+          "parse": {
+            "year": "number",
+            "value_usd_m": "number",
+            "tonnes": "number",
+            "usd_per_kg": "number"
+          }
+        }
+      },
+      "transform": [
+        {
+          "filter": "datum.year == yr"
+        },
+        {
+          "calculate": "datum.year + ': US$' + format(datum.value_usd_m, '.1f') + ' million exported in total'",
+          "as": "label"
+        }
+      ],
+      "mark": {
+        "type": "text",
+        "align": "left",
+        "fontSize": 15,
+        "fontWeight": 700,
+        "color": "#8a4a0b",
+        "x": 8,
+        "y": 14
+      },
+      "encoding": {
+        "text": {
+          "field": "label"
+        }
+      }
+    }
+  ],
+  "config": {
+    "view": {
+      "stroke": null
+    }
+  }
+}

@@ -1,0 +1,206 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "Marimekko (variable-width bar) chart for 2024: bar width = tonnes bought, bar height = average price per kg (US$), so bar area = total value.",
+  "data": {
+    "url": "data/exports_by_partner.csv",
+    "format": {
+      "parse": {
+        "year": "number",
+        "rank": "number",
+        "value_usd_m": "number",
+        "tonnes": "number",
+        "usd_per_kg": "number",
+        "lon": "number",
+        "lat": "number"
+      }
+    }
+  },
+  "transform": [
+    {
+      "filter": "datum.year == 2024"
+    },
+    {
+      "window": [
+        {
+          "op": "sum",
+          "field": "tonnes",
+          "as": "x1"
+        }
+      ],
+      "sort": [
+        {
+          "field": "usd_per_kg",
+          "order": "descending"
+        }
+      ],
+      "frame": [
+        null,
+        0
+      ]
+    },
+    {
+      "calculate": "datum.x1 - datum.tonnes",
+      "as": "x0"
+    },
+    {
+      "calculate": "(datum.x0 + datum.x1) / 2",
+      "as": "xmid"
+    }
+  ],
+  "width": "container",
+  "height": 340,
+  "layer": [
+    {
+      "mark": {
+        "type": "rect",
+        "stroke": "#fffaf0",
+        "strokeWidth": 1
+      },
+      "encoding": {
+        "x": {
+          "field": "x0",
+          "type": "quantitative",
+          "title": "Tonnes of honey bought in 2024 (bar width) →",
+          "axis": {
+            "format": ",",
+            "gridColor": "#efe6d6"
+          }
+        },
+        "x2": {
+          "field": "x1"
+        },
+        "y": {
+          "field": "usd_per_kg",
+          "type": "quantitative",
+          "title": "Average price paid (US$ per kg)",
+          "axis": {
+            "format": "$",
+            "gridColor": "#efe6d6"
+          }
+        },
+        "y2": {
+          "datum": 0
+        },
+        "color": {
+          "field": "region",
+          "type": "nominal",
+          "title": "Buyer region",
+          "scale": {
+            "domain": [
+              "East Asia",
+              "Southeast Asia",
+              "North America",
+              "Middle East",
+              "Europe",
+              "Africa",
+              "Pacific"
+            ],
+            "range": [
+              "#c9780f",
+              "#eba92b",
+              "#3d6f8e",
+              "#a0452a",
+              "#7a5a8c",
+              "#2f8f83",
+              "#5b7f3a"
+            ]
+          },
+          "legend": {
+            "orient": "top",
+            "direction": "horizontal"
+          }
+        },
+        "tooltip": [
+          {
+            "field": "partner",
+            "title": "Destination"
+          },
+          {
+            "field": "tonnes",
+            "title": "Tonnes",
+            "format": ",.0f"
+          },
+          {
+            "field": "usd_per_kg",
+            "title": "US$ per kg",
+            "format": "$.2f"
+          },
+          {
+            "field": "value_usd_m",
+            "title": "Total value (US$ million)",
+            "format": ".2f"
+          }
+        ]
+      }
+    },
+    {
+      "transform": [
+        {
+          "filter": "datum.tonnes >= 135"
+        }
+      ],
+      "mark": {
+        "type": "text",
+        "angle": 270,
+        "align": "left",
+        "dx": 6,
+        "fontSize": 11,
+        "color": "#2b2118"
+      },
+      "encoding": {
+        "x": {
+          "field": "xmid",
+          "type": "quantitative"
+        },
+        "y": {
+          "field": "usd_per_kg",
+          "type": "quantitative"
+        },
+        "text": {
+          "field": "partner"
+        }
+      }
+    },
+    {
+      "data": {
+        "values": [
+          {
+            "x": 1500,
+            "y": 26,
+            "t": "China pays ~US$20/kg — almost 4× the US price"
+          },
+          {
+            "x": 1500,
+            "y": 23.5,
+            "t": "The US buys the most honey, at ~US$5.40/kg"
+          }
+        ]
+      },
+      "mark": {
+        "type": "text",
+        "align": "left",
+        "fontStyle": "italic",
+        "fontSize": 12,
+        "color": "#8a4a0b"
+      },
+      "encoding": {
+        "x": {
+          "field": "x",
+          "type": "quantitative"
+        },
+        "y": {
+          "field": "y",
+          "type": "quantitative"
+        },
+        "text": {
+          "field": "t"
+        }
+      }
+    }
+  ],
+  "config": {
+    "view": {
+      "stroke": null
+    }
+  }
+}

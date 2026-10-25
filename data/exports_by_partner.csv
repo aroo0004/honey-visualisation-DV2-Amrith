@@ -1,0 +1,211 @@
+year,partner,region,rank,value_usd_m,tonnes,usd_per_kg,lon,lat
+2015,China,East Asia,1,8.604,821.2,10.48,103.0,35.0
+2015,Hong Kong,East Asia,2,5.052,557.4,9.06,114.2,22.3
+2015,Canada,North America,3,3.308,560.4,5.9,-106.3,56.1
+2015,Singapore,Southeast Asia,4,2.76,514.2,5.37,103.8,1.35
+2015,Philippines,Southeast Asia,5,2.555,534.2,4.78,121.8,12.9
+2015,Malaysia,Southeast Asia,6,2.034,424.1,4.8,101.9,4.2
+2015,United Arab Emirates,Middle East,7,1.523,250.9,6.07,53.8,23.4
+2015,Oman,Middle East,8,1.35,237.0,5.7,55.9,21.5
+2015,United Kingdom,Europe,9,1.13,278.5,4.06,-2.0,54.0
+2015,Saudi Arabia,Middle East,10,0.774,149.6,5.17,45.1,23.9
+2015,United States,North America,11,0.761,139.0,5.47,-98.6,39.8
+2015,Japan,East Asia,12,0.669,108.7,6.15,138.3,36.2
+2015,Indonesia,Southeast Asia,13,0.581,122.6,4.74,118.0,-2.5
+2015,Thailand,Southeast Asia,14,0.48,106.5,4.51,101.0,15.9
+2015,Mauritius,Africa,15,0.468,96.8,4.83,57.6,-20.3
+2015,South Korea,East Asia,16,0.276,30.0,9.2,127.9,36.5
+2015,Qatar,Middle East,17,0.199,36.3,5.49,51.2,25.3
+2015,Kuwait,Middle East,18,0.196,28.8,6.79,47.5,29.3
+2015,Papua New Guinea,Pacific,19,0.159,33.6,4.73,143.9,-6.3
+2015,Vietnam,Southeast Asia,20,0.109,20.5,5.31,108.3,14.1
+2015,Germany,Europe,21,0.047,6.4,7.41,10.4,51.2
+2016,China,East Asia,1,8.333,800.4,10.41,103.0,35.0
+2016,Hong Kong,East Asia,2,3.547,356.9,9.94,114.2,22.3
+2016,Singapore,Southeast Asia,3,2.883,477.7,6.04,103.8,1.35
+2016,Canada,North America,4,2.753,455.6,6.04,-106.3,56.1
+2016,Malaysia,Southeast Asia,5,2.152,438.6,4.91,101.9,4.2
+2016,Oman,Middle East,6,1.723,297.0,5.8,55.9,21.5
+2016,United Kingdom,Europe,7,1.618,286.7,5.64,-2.0,54.0
+2016,United Arab Emirates,Middle East,8,1.454,250.9,5.8,53.8,23.4
+2016,Philippines,Southeast Asia,9,1.073,215.2,4.99,121.8,12.9
+2016,Japan,East Asia,10,0.97,170.8,5.68,138.3,36.2
+2016,United States,North America,11,0.673,101.8,6.61,-98.6,39.8
+2016,Mauritius,Africa,12,0.518,92.5,5.6,57.6,-20.3
+2016,Saudi Arabia,Middle East,13,0.417,65.6,6.35,45.1,23.9
+2016,Indonesia,Southeast Asia,14,0.335,75.6,4.43,118.0,-2.5
+2016,Thailand,Southeast Asia,15,0.332,64.7,5.13,101.0,15.9
+2016,Papua New Guinea,Pacific,16,0.261,44.2,5.91,143.9,-6.3
+2016,Vietnam,Southeast Asia,17,0.229,21.7,10.53,108.3,14.1
+2016,Germany,Europe,18,0.173,18.9,9.12,10.4,51.2
+2016,Qatar,Middle East,19,0.155,23.5,6.59,51.2,25.3
+2016,Kuwait,Middle East,20,0.151,16.9,8.94,47.5,29.3
+2016,South Korea,East Asia,21,0.113,13.3,8.5,127.9,36.5
+2017,China,East Asia,1,6.391,526.8,12.13,103.0,35.0
+2017,Canada,North America,2,3.535,353.4,10.0,-106.3,56.1
+2017,Singapore,Southeast Asia,3,3.195,463.6,6.89,103.8,1.35
+2017,Hong Kong,East Asia,4,2.488,258.7,9.62,114.2,22.3
+2017,Malaysia,Southeast Asia,5,2.072,355.2,5.83,101.9,4.2
+2017,United Arab Emirates,Middle East,6,1.662,234.1,7.1,53.8,23.4
+2017,Japan,East Asia,7,1.502,210.5,7.14,138.3,36.2
+2017,United States,North America,8,1.482,205.0,7.23,-98.6,39.8
+2017,Oman,Middle East,9,1.123,162.4,6.91,55.9,21.5
+2017,United Kingdom,Europe,10,1.103,251.8,4.38,-2.0,54.0
+2017,Saudi Arabia,Middle East,11,0.88,137.5,6.4,45.1,23.9
+2017,Germany,Europe,12,0.767,45.9,16.71,10.4,51.2
+2017,Mauritius,Africa,13,0.64,85.1,7.52,57.6,-20.3
+2017,Philippines,Southeast Asia,14,0.602,83.4,7.22,121.8,12.9
+2017,Thailand,Southeast Asia,15,0.397,87.3,4.54,101.0,15.9
+2017,Papua New Guinea,Pacific,16,0.374,53.5,6.99,143.9,-6.3
+2017,Indonesia,Southeast Asia,17,0.296,54.7,5.42,118.0,-2.5
+2017,Qatar,Middle East,18,0.19,23.6,8.08,51.2,25.3
+2017,Vietnam,Southeast Asia,19,0.188,14.4,13.03,108.3,14.1
+2017,Kuwait,Middle East,20,0.125,14.4,8.65,47.5,29.3
+2017,South Korea,East Asia,21,0.122,18.5,6.56,127.9,36.5
+2018,China,East Asia,1,6.308,568.6,11.09,103.0,35.0
+2018,United States,North America,2,4.232,435.2,9.72,-98.6,39.8
+2018,Singapore,Southeast Asia,3,3.429,474.1,7.23,103.8,1.35
+2018,Hong Kong,East Asia,4,2.809,238.5,11.78,114.2,22.3
+2018,Malaysia,Southeast Asia,5,1.975,311.7,6.34,101.9,4.2
+2018,United Kingdom,Europe,6,1.843,342.4,5.38,-2.0,54.0
+2018,Canada,North America,7,1.83,237.9,7.69,-106.3,56.1
+2018,United Arab Emirates,Middle East,8,1.734,218.7,7.93,53.8,23.4
+2018,Japan,East Asia,9,1.234,111.7,11.05,138.3,36.2
+2018,Oman,Middle East,10,1.152,178.9,6.44,55.9,21.5
+2018,Germany,Europe,11,0.831,46.9,17.74,10.4,51.2
+2018,Mauritius,Africa,12,0.749,102.5,7.31,57.6,-20.3
+2018,Philippines,Southeast Asia,13,0.602,84.5,7.13,121.8,12.9
+2018,Saudi Arabia,Middle East,14,0.528,65.6,8.05,45.1,23.9
+2018,Indonesia,Southeast Asia,15,0.454,91.4,4.97,118.0,-2.5
+2018,Papua New Guinea,Pacific,16,0.358,55.7,6.43,143.9,-6.3
+2018,Vietnam,Southeast Asia,17,0.305,11.8,25.88,108.3,14.1
+2018,Thailand,Southeast Asia,18,0.289,54.1,5.34,101.0,15.9
+2018,South Korea,East Asia,19,0.204,31.4,6.49,127.9,36.5
+2018,Qatar,Middle East,20,0.184,19.1,9.61,51.2,25.3
+2018,Kuwait,Middle East,21,0.159,14.8,10.75,47.5,29.3
+2019,China,East Asia,1,10.465,629.7,16.62,103.0,35.0
+2019,United States,North America,2,5.953,712.0,8.36,-98.6,39.8
+2019,Singapore,Southeast Asia,3,2.811,419.6,6.7,103.8,1.35
+2019,Canada,North America,4,2.575,311.0,8.28,-106.3,56.1
+2019,Hong Kong,East Asia,5,1.943,215.4,9.02,114.2,22.3
+2019,Malaysia,Southeast Asia,6,1.479,237.0,6.24,101.9,4.2
+2019,United Arab Emirates,Middle East,7,1.399,159.7,8.76,53.8,23.4
+2019,Oman,Middle East,8,1.363,200.5,6.8,55.9,21.5
+2019,United Kingdom,Europe,9,1.335,205.0,6.52,-2.0,54.0
+2019,Japan,East Asia,10,1.302,142.5,9.14,138.3,36.2
+2019,Vietnam,Southeast Asia,11,1.1,33.8,32.58,108.3,14.1
+2019,Mauritius,Africa,12,0.79,111.8,7.07,57.6,-20.3
+2019,Philippines,Southeast Asia,13,0.608,87.1,6.98,121.8,12.9
+2019,Saudi Arabia,Middle East,14,0.607,63.4,9.57,45.1,23.9
+2019,South Korea,East Asia,15,0.602,36.2,16.65,127.9,36.5
+2019,Germany,Europe,16,0.305,20.6,14.86,10.4,51.2
+2019,Qatar,Middle East,17,0.21,17.7,11.87,51.2,25.3
+2019,Indonesia,Southeast Asia,18,0.156,30.7,5.09,118.0,-2.5
+2019,Thailand,Southeast Asia,19,0.156,32.0,4.89,101.0,15.9
+2019,Papua New Guinea,Pacific,20,0.082,15.0,5.44,143.9,-6.3
+2019,Kuwait,Middle East,21,0.077,5.1,14.93,47.5,29.3
+2020,China,East Asia,1,10.131,563.9,17.97,103.0,35.0
+2020,United States,North America,2,4.313,363.9,11.85,-98.6,39.8
+2020,Singapore,Southeast Asia,3,4.085,576.7,7.08,103.8,1.35
+2020,Japan,East Asia,4,3.52,254.5,13.83,138.3,36.2
+2020,Canada,North America,5,2.516,278.8,9.03,-106.3,56.1
+2020,United Arab Emirates,Middle East,6,2.33,237.9,9.79,53.8,23.4
+2020,Hong Kong,East Asia,7,2.31,300.5,7.69,114.2,22.3
+2020,Malaysia,Southeast Asia,8,1.772,266.0,6.66,101.9,4.2
+2020,Indonesia,Southeast Asia,9,1.374,368.3,3.73,118.0,-2.5
+2020,Oman,Middle East,10,1.201,163.2,7.36,55.9,21.5
+2020,Vietnam,Southeast Asia,11,0.958,29.5,32.42,108.3,14.1
+2020,Philippines,Southeast Asia,12,0.84,115.1,7.29,121.8,12.9
+2020,United Kingdom,Europe,13,0.823,96.4,8.54,-2.0,54.0
+2020,Mauritius,Africa,14,0.751,110.8,6.78,57.6,-20.3
+2020,Qatar,Middle East,15,0.658,32.7,20.14,51.2,25.3
+2020,South Korea,East Asia,16,0.545,53.9,10.11,127.9,36.5
+2020,Kuwait,Middle East,17,0.473,13.4,35.25,47.5,29.3
+2020,Saudi Arabia,Middle East,18,0.465,46.3,10.05,45.1,23.9
+2020,Germany,Europe,19,0.346,22.8,15.17,10.4,51.2
+2020,Papua New Guinea,Pacific,20,0.14,19.9,7.01,143.9,-6.3
+2020,Thailand,Southeast Asia,21,0.131,14.1,9.29,101.0,15.9
+2021,China,East Asia,1,6.584,333.5,19.74,103.0,35.0
+2021,United States,North America,2,5.658,880.2,6.43,-98.6,39.8
+2021,Japan,East Asia,3,4.277,364.0,11.75,138.3,36.2
+2021,Singapore,Southeast Asia,4,3.913,514.8,7.6,103.8,1.35
+2021,Canada,North America,5,3.546,343.1,10.34,-106.3,56.1
+2021,Indonesia,Southeast Asia,6,3.083,661.2,4.66,118.0,-2.5
+2021,United Arab Emirates,Middle East,7,2.588,231.6,11.18,53.8,23.4
+2021,Malaysia,Southeast Asia,8,2.334,300.5,7.77,101.9,4.2
+2021,Hong Kong,East Asia,9,1.973,191.3,10.31,114.2,22.3
+2021,Saudi Arabia,Middle East,10,1.425,128.8,11.06,45.1,23.9
+2021,United Kingdom,Europe,11,1.353,180.0,7.52,-2.0,54.0
+2021,Philippines,Southeast Asia,12,0.83,104.4,7.96,121.8,12.9
+2021,Oman,Middle East,13,0.748,114.9,6.51,55.9,21.5
+2021,Mauritius,Africa,14,0.698,87.2,8.0,57.6,-20.3
+2021,South Korea,East Asia,15,0.646,45.7,14.15,127.9,36.5
+2021,Vietnam,Southeast Asia,16,0.509,21.4,23.73,108.3,14.1
+2021,Germany,Europe,17,0.421,27.4,15.36,10.4,51.2
+2021,Kuwait,Middle East,18,0.351,16.9,20.7,47.5,29.3
+2021,Qatar,Middle East,19,0.302,16.6,18.17,51.2,25.3
+2021,Thailand,Southeast Asia,20,0.274,49.6,5.53,101.0,15.9
+2021,Papua New Guinea,Pacific,21,0.146,21.2,6.86,143.9,-6.3
+2022,United States,North America,1,7.333,1165.2,6.29,-98.6,39.8
+2022,China,East Asia,2,6.189,301.8,20.51,103.0,35.0
+2022,Singapore,Southeast Asia,3,3.696,553.7,6.68,103.8,1.35
+2022,Canada,North America,4,3.542,371.5,9.53,-106.3,56.1
+2022,Japan,East Asia,5,3.26,321.0,10.15,138.3,36.2
+2022,Indonesia,Southeast Asia,6,2.707,671.9,4.03,118.0,-2.5
+2022,Malaysia,Southeast Asia,7,2.19,357.0,6.14,101.9,4.2
+2022,Hong Kong,East Asia,8,2.031,228.2,8.9,114.2,22.3
+2022,United Arab Emirates,Middle East,9,1.851,189.2,9.78,53.8,23.4
+2022,United Kingdom,Europe,10,1.442,232.7,6.2,-2.0,54.0
+2022,Mauritius,Africa,11,0.86,116.9,7.36,57.6,-20.3
+2022,South Korea,East Asia,12,0.842,48.8,17.25,127.9,36.5
+2022,Oman,Middle East,13,0.821,126.0,6.52,55.9,21.5
+2022,Vietnam,Southeast Asia,14,0.793,32.9,24.09,108.3,14.1
+2022,Philippines,Southeast Asia,15,0.72,99.0,7.27,121.8,12.9
+2022,Qatar,Middle East,16,0.398,21.3,18.65,51.2,25.3
+2022,Germany,Europe,17,0.37,27.7,13.36,10.4,51.2
+2022,Thailand,Southeast Asia,18,0.277,54.3,5.09,101.0,15.9
+2022,Kuwait,Middle East,19,0.222,10.2,21.81,47.5,29.3
+2022,Papua New Guinea,Pacific,20,0.197,29.4,6.71,143.9,-6.3
+2022,Saudi Arabia,Middle East,21,0.16,23.7,6.77,45.1,23.9
+2023,United States,North America,1,8.036,1384.1,5.81,-98.6,39.8
+2023,China,East Asia,2,5.806,271.7,21.37,103.0,35.0
+2023,Canada,North America,3,3.329,335.7,9.92,-106.3,56.1
+2023,Japan,East Asia,4,3.01,249.6,12.06,138.3,36.2
+2023,Singapore,Southeast Asia,5,2.443,349.2,7.0,103.8,1.35
+2023,United Kingdom,Europe,6,2.27,381.0,5.96,-2.0,54.0
+2023,Hong Kong,East Asia,7,1.656,163.7,10.12,114.2,22.3
+2023,Malaysia,Southeast Asia,8,1.612,240.9,6.69,101.9,4.2
+2023,Philippines,Southeast Asia,9,1.584,154.9,10.23,121.8,12.9
+2023,United Arab Emirates,Middle East,10,1.542,170.2,9.06,53.8,23.4
+2023,Indonesia,Southeast Asia,11,1.177,335.0,3.51,118.0,-2.5
+2023,Vietnam,Southeast Asia,12,1.143,38.3,29.86,108.3,14.1
+2023,Oman,Middle East,13,0.96,131.4,7.3,55.9,21.5
+2023,South Korea,East Asia,14,0.737,49.7,14.82,127.9,36.5
+2023,Thailand,Southeast Asia,15,0.516,71.5,7.22,101.0,15.9
+2023,Kuwait,Middle East,16,0.392,22.6,17.34,47.5,29.3
+2023,Saudi Arabia,Middle East,17,0.361,52.1,6.93,45.1,23.9
+2023,Mauritius,Africa,18,0.356,50.1,7.11,57.6,-20.3
+2023,Qatar,Middle East,19,0.298,52.2,5.72,51.2,25.3
+2023,Germany,Europe,20,0.143,12.2,11.71,10.4,51.2
+2023,Papua New Guinea,Pacific,21,0.124,21.5,5.77,143.9,-6.3
+2024,United States,North America,1,9.353,1734.1,5.39,-98.6,39.8
+2024,China,East Asia,2,6.872,338.2,20.32,103.0,35.0
+2024,Canada,North America,3,3.924,411.4,9.54,-106.3,56.1
+2024,Japan,East Asia,4,3.348,285.2,11.74,138.3,36.2
+2024,Hong Kong,East Asia,5,2.545,154.0,16.53,114.2,22.3
+2024,Singapore,Southeast Asia,6,2.399,348.4,6.89,103.8,1.35
+2024,Oman,Middle East,7,2.036,138.4,14.71,55.9,21.5
+2024,United Arab Emirates,Middle East,8,1.579,170.2,9.28,53.8,23.4
+2024,Malaysia,Southeast Asia,9,1.528,237.1,6.45,101.9,4.2
+2024,Philippines,Southeast Asia,10,1.335,213.2,6.26,121.8,12.9
+2024,Mauritius,Africa,11,1.319,103.3,12.76,57.6,-20.3
+2024,Indonesia,Southeast Asia,12,0.86,276.1,3.11,118.0,-2.5
+2024,South Korea,East Asia,13,0.845,72.3,11.69,127.9,36.5
+2024,United Kingdom,Europe,14,0.8,149.6,5.35,-2.0,54.0
+2024,Vietnam,Southeast Asia,15,0.661,23.7,27.96,108.3,14.1
+2024,Saudi Arabia,Middle East,16,0.604,65.8,9.18,45.1,23.9
+2024,Thailand,Southeast Asia,17,0.447,59.4,7.53,101.0,15.9
+2024,Qatar,Middle East,18,0.303,19.7,15.41,51.2,25.3
+2024,Papua New Guinea,Pacific,19,0.233,35.2,6.6,143.9,-6.3
+2024,Kuwait,Middle East,20,0.212,17.1,12.38,47.5,29.3
+2024,Germany,Europe,21,0.195,19.6,9.96,10.4,51.2

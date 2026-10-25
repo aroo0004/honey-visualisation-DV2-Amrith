@@ -1,0 +1,232 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "Range chart: hives needed to pollinate each crop (2022 planted area x recommended hives per hectare, low to high), compared with the number of commercial hives in Australia (2023).",
+  "data": {
+    "url": "data/hive_demand.csv",
+    "format": {
+      "parse": {
+        "area_ha_2022": "number",
+        "hives_per_ha_low": "number",
+        "hives_per_ha_high": "number",
+        "hives_low": "number",
+        "hives_high": "number"
+      }
+    }
+  },
+  "transform": [
+    {
+      "filter": "datum.hives_high >= 4000"
+    },
+    {
+      "calculate": "datum.hives_low == datum.hives_high ? format(datum.hives_high, ',') : format(datum.hives_low, ',') + ' – ' + format(datum.hives_high, ',')",
+      "as": "range_label"
+    }
+  ],
+  "width": "container",
+  "height": 360,
+  "layer": [
+    {
+      "mark": {
+        "type": "bar",
+        "height": 12,
+        "cornerRadius": 6,
+        "color": "#5b7f3a",
+        "opacity": 0.85
+      },
+      "encoding": {
+        "y": {
+          "field": "crop",
+          "type": "nominal",
+          "title": null,
+          "sort": null,
+          "axis": {
+            "domain": false,
+            "ticks": false,
+            "labelFontWeight": 600
+          }
+        },
+        "x": {
+          "field": "hives_low",
+          "type": "quantitative",
+          "title": "Honey bee hives needed for pollination (low – high estimate)",
+          "axis": {
+            "format": ",",
+            "gridColor": "#efe6d6"
+          }
+        },
+        "x2": {
+          "field": "hives_high"
+        },
+        "tooltip": [
+          {
+            "field": "crop",
+            "title": "Crop"
+          },
+          {
+            "field": "area_ha_2022",
+            "title": "Area planted 2022 (ha)",
+            "format": ","
+          },
+          {
+            "field": "hives_per_ha_low",
+            "title": "Hives per ha (low)"
+          },
+          {
+            "field": "hives_per_ha_high",
+            "title": "Hives per ha (high)"
+          },
+          {
+            "field": "range_label",
+            "title": "Hives needed"
+          }
+        ]
+      }
+    },
+    {
+      "mark": {
+        "type": "tick",
+        "thickness": 3,
+        "size": 16,
+        "color": "#2f5220"
+      },
+      "encoding": {
+        "y": {
+          "field": "crop",
+          "type": "nominal",
+          "title": null,
+          "sort": null,
+          "axis": {
+            "domain": false,
+            "ticks": false,
+            "labelFontWeight": 600
+          }
+        },
+        "x": {
+          "field": "hives_high",
+          "type": "quantitative"
+        }
+      }
+    },
+    {
+      "mark": {
+        "type": "text",
+        "align": "left",
+        "dx": 8,
+        "fontSize": 11,
+        "color": "#4a3b2c"
+      },
+      "encoding": {
+        "y": {
+          "field": "crop",
+          "type": "nominal",
+          "title": null,
+          "sort": null,
+          "axis": {
+            "domain": false,
+            "ticks": false,
+            "labelFontWeight": 600
+          }
+        },
+        "x": {
+          "field": "hives_high",
+          "type": "quantitative"
+        },
+        "text": {
+          "field": "range_label"
+        }
+      }
+    },
+    {
+      "data": {
+        "values": [
+          {
+            "x": 630490,
+            "t": "All commercial hives: 630,490"
+          },
+          {
+            "x": 866045,
+            "t": "All hives incl. hobby: 866,045"
+          }
+        ]
+      },
+      "layer": [
+        {
+          "mark": {
+            "type": "rule",
+            "strokeDash": [
+              5,
+              4
+            ],
+            "color": "#a0452a",
+            "strokeWidth": 1.5
+          },
+          "encoding": {
+            "x": {
+              "field": "x",
+              "type": "quantitative"
+            }
+          }
+        },
+        {
+          "transform": [
+            {
+              "filter": "datum.x < 700000"
+            }
+          ],
+          "mark": {
+            "type": "text",
+            "align": "left",
+            "dx": 4,
+            "y": {
+              "expr": "height - 40"
+            },
+            "fontSize": 11,
+            "fontWeight": 600,
+            "color": "#a0452a"
+          },
+          "encoding": {
+            "x": {
+              "field": "x",
+              "type": "quantitative"
+            },
+            "text": {
+              "field": "t"
+            }
+          }
+        },
+        {
+          "transform": [
+            {
+              "filter": "datum.x > 700000"
+            }
+          ],
+          "mark": {
+            "type": "text",
+            "align": "left",
+            "dx": 4,
+            "y": {
+              "expr": "height - 22"
+            },
+            "fontSize": 11,
+            "fontWeight": 600,
+            "color": "#a0452a"
+          },
+          "encoding": {
+            "x": {
+              "field": "x",
+              "type": "quantitative"
+            },
+            "text": {
+              "field": "t"
+            }
+          }
+        }
+      ]
+    }
+  ],
+  "config": {
+    "view": {
+      "stroke": null
+    }
+  }
+}

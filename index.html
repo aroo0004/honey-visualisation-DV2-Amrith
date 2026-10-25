@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en-AU">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Liquid Gold, Under Threat — Australia's Honey Industry</title>
+  <meta name="description" content="A data story about Australian beekeeping, honey production and exports, the value of honey bee pollination, and the spread of varroa mite.">
+  <meta name="author" content="Amrithraj Roopesh">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,700&family=Source+Sans+3:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="https://cdn.jsdelivr.net/npm/vega@5"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vega-lite@5"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vega-embed@6"></script>
+</head>
+<body>
+
+<!-- ============================== HERO ============================== -->
+<header class="hero">
+  <div class="wrap">
+    <div class="kicker">FIT3179 Data Visualisation 2 · Australian Honey Industry</div>
+    <h1>Liquid Gold, Under Threat</h1>
+    <p class="lede">Australia's honey bees fill our pantries, earn export dollars and quietly pollinate
+      billions of dollars of food. Here is how the industry works — and the tiny mite that is now
+      changing it.</p>
+    <div class="kpis">
+      <div class="kpi"><span class="num">866,045</span><span class="lbl">registered hives across Australia (2022-23)</span></div>
+      <div class="kpi"><span class="num">48,983</span><span class="lbl">beekeepers — 96% of them hobbyists</span></div>
+      <div class="kpi"><span class="num">~39,600 t</span><span class="lbl">of honey produced in an average year</span></div>
+      <div class="kpi green"><span class="num">$4.6 billion</span><span class="lbl">added to crop production by honey bee pollination (2020-21)</span></div>
+    </div>
+    <p class="byline">By <strong>Amrithraj Roopesh</strong> · Monash University · October 2026 · Data sources listed at the end of the page</p>
+  </div>
+</header>
+
+<nav class="toc" aria-label="Sections">
+  <div class="wrap">
+    <ol>
+      <li><a href="#keepers"><span>1</span>A nation of beekeepers</a></li>
+      <li><a href="#jar"><span>2</span>From hive to jar</a></li>
+      <li><a href="#trade"><span>3</span>Sweet trade</a></li>
+      <li><a href="#pollination"><span>4</span>Bees feed the nation</a></li>
+      <li><a href="#varroa"><span>5</span>The mite that changed everything</a></li>
+      <li><a href="#sources">Sources</a></li>
+    </ol>
+  </div>
+</nav>
+
+<main>
+
+<!-- ============================== 1. KEEPERS ============================== -->
+<section class="chapter" id="keepers">
+  <div class="wrap">
+    <div class="intro">
+      <span class="chapter-num">01</span>
+      <h2>A nation of beekeepers</h2>
+      <p>The European honey bee arrived in Australia in 1822. Today almost 49,000 people keep bees, from
+        backyard hobbyists with a single box to commercial operators who truck hundreds of hives across
+        the country to follow the flowering of eucalypts and crops.</p>
+    </div>
+
+    <div class="row full">
+      <figure>
+        <div id="c01" class="vis wide-fixed"></div>
+        <figcaption><b>How to read:</b> darker states have more of the selected measure. Use the dropdown to
+          switch measures; hover a state to highlight it in the chart on the right. Grey dot = 2018,
+          amber dot = 2023. Number = % change.
+          Data: AHBIC via Clarke &amp; Le Feuvre (2024), AgriFutures; AHBIC (2018) via eXtensionAUS; state areas from Geoscience Australia.
+          <a href="specs/c01_states.vl.json">Spec</a></figcaption>
+      </figure>
+    </div>
+    <div class="callout">
+      <p><strong>New South Wales is the heart of Australian beekeeping:</strong> it holds 46% of all hives and
+        31% of beekeepers. Apart from the tiny ACT, Victoria packs the most hives into each square kilometre, while a typical NSW beekeeper
+        runs more than twice as many hives as one in Victoria. Beekeeper numbers jumped everywhere after 2018 —
+        in NSW they doubled as owners rushed to register when varroa mite was found in 2022.</p>
+    </div>
+
+    <div class="row">
+      <div class="note">
+        <h3>A few professionals do most of the work</h3>
+        <p>Just <strong>1,872</strong> commercial beekeepers (those with more than 50 hives) make up only
+          4% of all beekeepers, yet they own nearly three in every four hives.</p>
+        <p class="howto">Each grid has 100 squares. Each square is 1% of the total.</p>
+      </div>
+      <figure>
+        <div id="c03" class="vis"></div>
+        <figcaption>Data: AHBIC (Aug 2023) via Clarke &amp; Le Feuvre (2024), AgriFutures, Table 2 and Table 1.
+          <a href="specs/c03_waffle.vl.json">Spec</a></figcaption>
+      </figure>
+    </div>
+  </div>
+</section>
+
+<!-- ============================== 2. JAR ============================== -->
+<section class="chapter" id="jar">
+  <div class="wrap">
+    <div class="intro">
+      <span class="chapter-num">02</span>
+      <h2>From hive to jar</h2>
+      <p>How much honey Australia makes depends on the weather. Bees need flowering native trees, and drought
+        or fire can wipe out a season's nectar in weeks.</p>
+    </div>
+
+    <div class="row">
+      <div class="note">
+        <span class="big-stat">−35%</span>
+        <h3>The Black Summer collapse</h3>
+        <p>In 2019-20 drought and the Black Summer bushfires burnt millions of hectares of forest that bees
+          rely on. Commercial honey production fell to 14,949 tonnes — 35% below the 2012-13 peak.</p>
+        <p class="howto">The chart shows honey on which the national honey levy was paid — the best
+          year-by-year measure of commercial production.</p>
+      </div>
+      <figure>
+        <div id="c04" class="vis"></div>
+        <figcaption>Data: Levies Revenue Service, in Clarke &amp; Le Feuvre (2024), AgriFutures, Table 10.
+          <a href="specs/c04_production.vl.json">Spec</a></figcaption>
+      </figure>
+    </div>
+
+    <div class="row flip">
+      <div class="note">
+        <h3>Less honey used to mean better prices</h3>
+        <p>Follow the line from the pale dot (2011-12) to the dark dot (2022-23). As harvests shrank after 2014,
+          the price paid to beekeepers climbed to $6.50/kg. Since 2020 that link has broken: prices fell
+          to $5.00/kg even though harvests stayed about the same — while imports of cheap honey rose.</p>
+        <p class="howto">Each dot is one year. Right = more honey; up = higher price.</p>
+      </div>
+      <figure>
+        <div id="c05" class="vis"></div>
+        <figcaption>Data: Clarke &amp; Le Feuvre (2024), AgriFutures, Table 10 (levy volume; beekeeper-adjusted farmgate price, A$).
+          <a href="specs/c05_price_volume.vl.json">Spec</a></figcaption>
+      </figure>
+    </div>
+
+    <div class="row">
+      <div class="note">
+        <h3>Our honey grows in public forests</h3>
+        <p>Most commercial honey depends on access to state forests and national parks. In Tasmania 90% of
+          honey production and hive build-up relies on public land; in Queensland and Western Australia, 80%.
+          NSW alone has 8,500 apiary sites on public land.</p>
+        <p class="howto">Circle size = number of public-land apiary sites. Colour = share of production
+          relying on public land.</p>
+      </div>
+      <figure>
+        <div id="c06" class="vis"></div>
+        <figcaption>Data: Clarke (2019) in Clarke &amp; Le Feuvre (2024), AgriFutures, Table 7. NT and ACT not reported.
+          <a href="specs/c06_public_land.vl.json">Spec</a></figcaption>
+      </figure>
+    </div>
+
+    <div class="row flip">
+      <div class="note">
+        <h3>We now buy more honey than we sell</h3>
+        <p>Honey imports rose sharply after 2019, reaching <strong>8,797 tonnes</strong> in 2022-23, four times
+          what Australia exported. Most imports now come from Asia and cost less than $3 per kilogram on arrival.</p>
+        <p class="howto">Bars below the line are imports (by region of origin); bars above are exports.</p>
+      </div>
+      <figure>
+        <div id="c07" class="vis"></div>
+        <figcaption>Data: Department of Agriculture, Fisheries and Forestry, in Clarke &amp; Le Feuvre (2024), Tables 12–14 (years ending 30 June). The 2019 regional import figures add to 3,947 t, while the source table's printed total is 4,921 t; the chart shows the regional figures.
+          <a href="specs/c07_imports_exports.vl.json">Spec</a></figcaption>
+      </figure>
+    </div>
+  </div>
+</section>
+
+<!-- ============================== 3. TRADE ============================== -->
+<section class="chapter" id="trade">
+  <div class="wrap">
+    <div class="intro">
+      <span class="chapter-num">03</span>
+      <h2>Sweet trade</h2>
+      <p>Australia exports only a small share of its honey, but it sells it far and wide — about
+        4,900 tonnes worth US$42 million in 2024, to more than 40 countries. Slide through the years to watch
+        the buyers change.</p>
+    </div>
+
+    <div class="row full">
+      <figure>
+        <div id="c08" class="vis"></div>
+        <figcaption><b>How to read:</b> each line runs from Australia to a buyer; thicker lines and bigger circles = more
+          export value. Drag the slider to change the year; hover for tonnes and price. Shows the 21 largest buyers.
+          Data: UN Comtrade via World Bank WITS, product HS 040900 (natural honey), calendar years, US$.
+          Base map: Natural Earth via vega-datasets. <a href="specs/c08_export_flows.vl.json">Spec</a></figcaption>
+      </figure>
+    </div>
+
+    <div class="row">
+      <div class="note">
+        <h3>The United States overtakes China</h3>
+        <p>China was our biggest honey customer for most of the decade. Since 2022 the United States has led,
+          and in 2024 it bought <strong>US$9.4 million</strong> of Australian honey — almost 14 times what it spent in 2016.</p>
+        <p class="howto">Darker cells = higher export value. Buyers are sorted by their 2015–2024 total.</p>
+      </div>
+      <figure>
+        <div id="c09" class="vis"></div>
+        <figcaption>Data: UN Comtrade via WITS (HS 040900), US$ million. <a href="specs/c09_export_heatmap.vl.json">Spec</a></figcaption>
+      </figure>
+    </div>
+
+    <div class="row flip">
+      <div class="note">
+        <h3>Volume or value?</h3>
+        <p>Not every buyer pays the same. The US takes the most honey but at around US$5.40/kg, largely bulk.
+          China, Hong Kong and Vietnam pay three to five times more per kilogram, so a small volume earns
+          a large share of export income.</p>
+        <p class="howto">Width = tonnes bought, height = price per kg. The area of each bar is the total value.</p>
+      </div>
+      <figure>
+        <div id="c10" class="vis"></div>
+        <figcaption>Data: UN Comtrade via WITS (HS 040900), 2024, 21 largest buyers. <a href="specs/c10_marimekko.vl.json">Spec</a></figcaption>
+      </figure>
+    </div>
+  </div>
+</section>
+
+<!-- ============================== 4. POLLINATION ============================== -->
+<section class="chapter bees" id="pollination">
+  <div class="wrap">
+    <div class="intro">
+      <span class="chapter-num">04</span>
+      <h2>Bees feed the nation</h2>
+      <p>Honey is only part of the story. Honey bees move pollen between flowers, which many fruit, nut,
+        vegetable and seed crops need to set fruit. Crops worth <strong>$12.9 billion</strong> rely at least
+        partly on honey bees, and bees add an estimated <strong>$4.6 billion</strong> to what those crops
+        produce. That is more than ten times the value of the honey itself.</p>
+    </div>
+
+    <div class="row full">
+      <figure>
+        <div id="c11" class="vis"></div>
+        <figcaption><b>How to read:</b> each box is one crop; its area shows how many dollars honey bee pollination
+          adds to that crop. Boxes are grouped by state; only the top three crops per state are shown.
+          Data: Gillespie, Clarke &amp; Frost (2024) via AgriFutures, "The buzz of the nation" (2020-21 values).
+          <a href="specs/c11_pollination_treemap.vg.json">Spec (Vega)</a></figcaption>
+      </figure>
+    </div>
+
+    <div class="row">
+      <div class="note">
+        <span class="big-stat">38–62%</span>
+        <h3>Almonds alone need most of our hives</h3>
+        <p>Almond trees cannot set nuts without bees. Australia's 60,463 ha of almond orchards need between
+          242,000 and 393,000 hives each spring — up to 62% of every commercial hive in the country, mostly
+          trucked to the Murray Valley. Paid pollination earned beekeepers <strong>$99.2 million</strong> in 2023,
+          up from $40.2 million in 2019.</p>
+        <p class="howto">Each bar spans the low and high estimate of hives needed. Dashed lines show how many
+          hives exist.</p>
+      </div>
+      <figure>
+        <div id="c12" class="vis"></div>
+        <figcaption>Data: Hort Innovation (2020, 2022), ABS (2022) and beekeeper advice, in Clarke &amp; Le Feuvre (2024), Tables 20–21.
+          Canola and sunflower use few paid hives but their huge area pushes the upper estimate up.
+          <a href="specs/c12_hive_demand.vl.json">Spec</a></figcaption>
+      </figure>
+    </div>
+  </div>
+</section>
+
+<!-- ============================== 5. VARROA ============================== -->
+<section class="chapter mite" id="varroa">
+  <div class="wrap">
+    <div class="intro">
+      <span class="chapter-num">05</span>
+      <h2>The mite that changed everything</h2>
+      <p>For decades Australia was the only inhabited continent free of <em>Varroa destructor</em>, a
+        pinhead-sized parasite that feeds on bees and spreads viruses. Wherever it has spread overseas, most wild honey bee colonies have died out. In June 2022 it was found in sentinel hives at the Port of Newcastle.</p>
+    </div>
+
+    <div class="row full">
+      <figure>
+        <div id="c13" class="vis"></div>
+        <figcaption><b>How to read:</b> drag the slider to move through time. Each dot is a first-reported detection
+          in a new area; large dots are new in the last three months. States turn pink once varroa is confirmed.
+          Dots show approximate town locations of key reported detections, not every infested site.
+          Data: NSW DPI(RD), Agriculture Victoria, Biosecurity Queensland, PIRSA, Outbreak.gov.au, ABC News and regional media.
+          <a href="specs/c13_varroa_spread.vl.json">Spec</a></figcaption>
+      </figure>
+    </div>
+
+    <div class="row">
+      <div class="note">
+        <span class="big-stat">27,000+</span>
+        <h3>hives removed from eradication zones</h3>
+      </div>
+      <div class="callout red">
+        <p>NSW spent 14 months trying to wipe varroa out: more than 27,000 hives were removed from red
+          eradication zones and $101 million was spent nationally. In September 2023 authorities agreed eradication
+          was no longer possible and moved to <strong>managing</strong> the mite. Since then it has reached Victoria
+          (2024), Queensland, the ACT and South Australia (2025), and in September 2026 it was found near Cairns —
+          the most northerly detection yet. In 2026, mites in northern NSW also showed resistance to two common
+          treatments.</p>
+        <p>Without wild bees doing free pollination, farmers will need more managed hives — and beekeepers will
+          spend more time and money keeping their colonies alive.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================== CONCLUSION ============================== -->
+<section class="chapter" id="conclusion">
+  <div class="wrap">
+    <h2>What it all means</h2>
+    <div class="takeaways">
+      <div><b>Small industry, big reach</b>Honey is worth hundreds of millions of dollars, but the pollination
+        it enables is worth billions and touches almost every fruit bowl.</div>
+      <div><b>Squeezed from two sides</b>Weather and fire limit how much honey we make, while cheap imports
+        hold down the price beekeepers receive.</div>
+      <div><b>A new normal</b>Varroa is here to stay. Registering hives, checking for mites and buying
+        Australian honey all help keep the industry — and our food supply — healthy.</div>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<!-- ============================== FOOTER ============================== -->
+<footer id="sources">
+  <div class="wrap">
+    <div class="meta">
+      <div>
+        <h2>Data sources</h2>
+        <ol>
+          <li>Clarke, M. &amp; Le Feuvre, D. (2024). <em>Size and scope of the Australian honey bee and pollination industry: an updated snapshot for 2023</em>. AgriFutures Australia, pub. 24-107. <a href="https://agrifutures.com.au/product/size-and-scope-of-the-australian-honey-bee-and-pollination-industry-an-updated-snapshot-for-2023/">agrifutures.com.au</a> (includes AHBIC, DAFF, Levies Revenue Service and Hort Innovation data).</li>
+          <li>Gillespie, R., Clarke, M. &amp; Frost, E. (2024). <em>Value of honey bee pollination to the Australian economy</em>, summarised in <em>The buzz of the nation</em>. AgriFutures Australia, pubs. 24-111 &amp; 24-200. <a href="https://agrifutures.com.au/product/value-of-honey-bee-pollination-to-the-australian-economy/">agrifutures.com.au</a></li>
+          <li>World Bank WITS / UN Comtrade. <em>Australia natural honey (HS 040900) exports by country</em>, 2015–2024. <a href="https://wits.worldbank.org/trade/comtrade/en/country/AUS/year/2024/tradeflow/Exports/partner/ALL/product/040900">wits.worldbank.org</a></li>
+          <li>Weatherhead, T. / AHBIC (2018). Registered beekeepers and hives by state, as at 31 Oct 2018, via <a href="https://extensionaus.com.au/professionalbeekeepers/670000-registered-honey-bee-hives-in-australia/">eXtensionAUS</a>.</li>
+          <li>Varroa detections: <a href="https://www.outbreak.gov.au/current-outbreaks/varroa-mite">Outbreak.gov.au</a>; <a href="https://www.dpi.nsw.gov.au/emergencies/biosecurity/current-situation/varroa-mite-emergency-response/varroa-frequently-asked-questions">NSW DPI</a>; <a href="https://agriculture.vic.gov.au/about/media-centre/media-releases/2024-releases/varroa-mite-detected-in-victoria">Agriculture Victoria</a>; <a href="https://www.business.qld.gov.au/industries/farms-fishing-forestry/agriculture/animal/industries/bees/varroa-mite/detections">Business Queensland</a>; <a href="https://pir.sa.gov.au/animal-management/animal-health/species/bees/varroa-mite">PIRSA</a>; ABC News (5 Mar 2025, 11 Sep 2026); Region Canberra (4 Apr 2025); Northern Daily Leader (7 Jul 2022); ARR News (26 Jul 2022); Echo (Aug 2023).</li>
+          <li>State and territory areas: Geoscience Australia, <em>Area of Australia – States and Territories</em>.</li>
+          <li>Base maps: Australian state boundaries (GeoJSON from <a href="https://github.com/codeforgermany/click_that_hood">click_that_hood</a>); world countries (Natural Earth 1:110m via <a href="https://github.com/vega/vega-datasets">vega-datasets</a>).</li>
+        </ol>
+      </div>
+      <div>
+        <h2>About</h2>
+        <p>Created by <strong>Amrithraj Roopesh</strong>, [student ID], for FIT3179 Data Visualisation, Monash University (Clayton). October 2026.</p>
+        <p>Built with <a href="https://vega.github.io/vega-lite/">Vega-Lite</a> and <a href="https://vega.github.io/vega/">Vega</a> (treemap). All chart specifications are in the <code>specs/</code> folder of this repository.</p>
+        <h3>Notes</h3>
+        <p>Trade values are in US dollars (as reported to the UN); farmgate prices and crop values are in Australian dollars. Map coordinates for countries, states and towns are approximate centres.</p>
+        <h3>Use of AI</h3>
+        <p>Generative AI (Claude, Anthropic) was used to help with minor errors and assist in troubleshooting. All data sets and charts were cross-checked and fact checked by the editor and author</p>
+        <p>Typefaces: Fraunces and Source Sans 3 (Google Fonts, SIL Open Font License).</p>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,272 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "Dot map with time slider: first-reported varroa mite detections in Australia, June 2022 to September 2026. States turn red once their first Varroa destructor detection is confirmed.",
+  "width": "container",
+  "height": 460,
+  "params": [
+    {
+      "name": "mth",
+      "value": 51,
+      "bind": {
+        "input": "range",
+        "min": 0,
+        "max": 51,
+        "step": 1,
+        "name": "Months since June 2022: "
+      }
+    }
+  ],
+  "projection": {
+    "type": "conicEqualArea",
+    "parallels": [
+      -18,
+      -36
+    ],
+    "rotate": [
+      -132,
+      0
+    ]
+  },
+  "layer": [
+    {
+      "data": {
+        "url": "https://cdn.jsdelivr.net/gh/codeforgermany/click_that_hood@main/public/data/australia.geojson",
+        "format": {
+          "type": "json",
+          "property": "features"
+        }
+      },
+      "transform": [
+        {
+          "filter": "datum.properties.name != 'Other Territories'"
+        },
+        {
+          "lookup": "properties.name",
+          "from": {
+            "data": {
+              "url": "data/varroa_states.csv",
+              "format": {
+                "parse": {
+                  "months_since_jun_2022": "number"
+                }
+              }
+            },
+            "key": "state",
+            "fields": [
+              "first_detection",
+              "months_since_jun_2022"
+            ]
+          }
+        },
+        {
+          "calculate": "isValid(datum.months_since_jun_2022) && datum.months_since_jun_2022 <= mth ? 'Varroa confirmed' : 'No varroa reported yet'",
+          "as": "status"
+        }
+      ],
+      "mark": {
+        "type": "geoshape",
+        "stroke": "#fffaf0",
+        "strokeWidth": 1.2
+      },
+      "encoding": {
+        "color": {
+          "field": "status",
+          "type": "nominal",
+          "title": "State status",
+          "scale": {
+            "domain": [
+              "Varroa confirmed",
+              "No varroa reported yet"
+            ],
+            "range": [
+              "#f2c4bd",
+              "#efe6d6"
+            ]
+          },
+          "legend": {
+            "orient": "bottom-left"
+          }
+        },
+        "tooltip": [
+          {
+            "field": "properties.name",
+            "title": "State"
+          },
+          {
+            "field": "status",
+            "title": "Status at selected month"
+          },
+          {
+            "field": "first_detection",
+            "title": "First V. destructor detection"
+          }
+        ]
+      }
+    },
+    {
+      "data": {
+        "url": "data/varroa_detections.csv",
+        "format": {
+          "parse": {
+            "date": "date",
+            "lon": "number",
+            "lat": "number"
+          }
+        }
+      },
+      "transform": [
+        {
+          "calculate": "(utcyear(datum.date) - 2022) * 12 + utcmonth(datum.date) - 5",
+          "as": "m"
+        },
+        {
+          "filter": "datum.m <= mth"
+        },
+        {
+          "calculate": "mth - datum.m <= 3 ? 'New in the last 3 months' : 'Earlier detection'",
+          "as": "recency"
+        },
+        {
+          "calculate": "utcFormat(datum.date, datum.date_precision == 'day' ? '%e %b %Y' : '%b %Y')",
+          "as": "when"
+        }
+      ],
+      "encoding": {
+        "longitude": {
+          "field": "lon",
+          "type": "quantitative"
+        },
+        "latitude": {
+          "field": "lat",
+          "type": "quantitative"
+        }
+      },
+      "layer": [
+        {
+          "mark": {
+            "type": "circle",
+            "stroke": "#fffaf0",
+            "strokeWidth": 1.5,
+            "opacity": 0.95
+          },
+          "encoding": {
+            "size": {
+              "field": "recency",
+              "type": "nominal",
+              "scale": {
+                "domain": [
+                  "New in the last 3 months",
+                  "Earlier detection"
+                ],
+                "range": [
+                  420,
+                  150
+                ]
+              },
+              "legend": null
+            },
+            "color": {
+              "field": "species",
+              "type": "nominal",
+              "title": "Mite species",
+              "scale": {
+                "domain": [
+                  "Varroa destructor",
+                  "Varroa jacobsoni"
+                ],
+                "range": [
+                  "#b3261e",
+                  "#7a5a8c"
+                ]
+              },
+              "legend": {
+                "orient": "bottom-right"
+              }
+            },
+            "tooltip": [
+              {
+                "field": "place",
+                "title": "Place"
+              },
+              {
+                "field": "state",
+                "title": "State"
+              },
+              {
+                "field": "when",
+                "title": "First reported"
+              },
+              {
+                "field": "note",
+                "title": "Note"
+              },
+              {
+                "field": "species",
+                "title": "Species"
+              }
+            ]
+          }
+        },
+        {
+          "transform": [
+            {
+              "filter": "mth - datum.m <= 3"
+            }
+          ],
+          "mark": {
+            "type": "text",
+            "align": "left",
+            "dx": 12,
+            "fontWeight": 600,
+            "fontSize": 12,
+            "color": "#7a1a14"
+          },
+          "encoding": {
+            "text": {
+              "field": "place"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "data": {
+        "values": [
+          {}
+        ]
+      },
+      "transform": [
+        {
+          "calculate": "timeFormat(datetime(2022, 5 + mth, 1), '%B %Y')",
+          "as": "label"
+        }
+      ],
+      "mark": {
+        "type": "text",
+        "align": "left",
+        "baseline": "top",
+        "fontSize": 22,
+        "fontWeight": 700,
+        "color": "#b3261e",
+        "x": 4,
+        "y": 4
+      },
+      "encoding": {
+        "text": {
+          "field": "label"
+        }
+      }
+    }
+  ],
+  "config": {
+    "view": {
+      "stroke": null
+    }
+  },
+  "resolve": {
+    "scale": {
+      "color": "independent",
+      "size": "independent"
+    }
+  }
+}

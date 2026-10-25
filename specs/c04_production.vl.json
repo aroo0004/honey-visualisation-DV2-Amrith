@@ -1,0 +1,360 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "Annotated area chart of levy-paid commercial honey production, 2011-12 to 2022-23.",
+  "width": "container",
+  "height": 300,
+  "layer": [
+    {
+      "data": {
+        "url": "data/production.csv",
+        "format": {
+          "parse": {
+            "year_end": "number",
+            "levy_tonnes": "number",
+            "price_aud_per_kg": "number"
+          }
+        }
+      },
+      "mark": {
+        "type": "area",
+        "line": {
+          "color": "#c9780f",
+          "strokeWidth": 2.5
+        },
+        "color": {
+          "x1": 1,
+          "y1": 1,
+          "x2": 1,
+          "y2": 0,
+          "gradient": "linear",
+          "stops": [
+            {
+              "offset": 0,
+              "color": "#fdf3d7"
+            },
+            {
+              "offset": 1,
+              "color": "#f2be55"
+            }
+          ]
+        },
+        "interpolate": "monotone"
+      },
+      "encoding": {
+        "x": {
+          "field": "season",
+          "type": "ordinal",
+          "title": "Financial year",
+          "axis": {
+            "labelAngle": 0,
+            "labelExpr": "slice(datum.value, 2, 4) + '–' + slice(datum.value, 5)"
+          }
+        },
+        "y": {
+          "field": "levy_tonnes",
+          "type": "quantitative",
+          "title": "Honey produced (tonnes)",
+          "scale": {
+            "domain": [
+              0,
+              27000
+            ]
+          },
+          "axis": {
+            "format": ",",
+            "gridColor": "#efe6d6"
+          }
+        }
+      }
+    },
+    {
+      "data": {
+        "url": "data/production.csv",
+        "format": {
+          "parse": {
+            "year_end": "number",
+            "levy_tonnes": "number",
+            "price_aud_per_kg": "number"
+          }
+        }
+      },
+      "params": [
+        {
+          "name": "hover",
+          "select": {
+            "type": "point",
+            "on": "pointerover",
+            "nearest": true,
+            "clear": "pointerout"
+          }
+        }
+      ],
+      "mark": {
+        "type": "circle",
+        "size": 60,
+        "color": "#8a4a0b"
+      },
+      "encoding": {
+        "x": {
+          "field": "season",
+          "type": "ordinal"
+        },
+        "y": {
+          "field": "levy_tonnes",
+          "type": "quantitative"
+        },
+        "opacity": {
+          "condition": {
+            "param": "hover",
+            "empty": false,
+            "value": 1
+          },
+          "value": 0.35
+        },
+        "tooltip": [
+          {
+            "field": "season",
+            "title": "Year"
+          },
+          {
+            "field": "levy_tonnes",
+            "title": "Honey (tonnes)",
+            "format": ","
+          },
+          {
+            "field": "price_aud_per_kg",
+            "title": "Farmgate price ($/kg)",
+            "format": "$.2f"
+          }
+        ]
+      }
+    },
+    {
+      "data": {
+        "values": [
+          {
+            "season": "2012-13",
+            "y": 23031,
+            "ty": 24800,
+            "pos": "top",
+            "line1": "Peak: 23,031 t",
+            "line2": "highest in the series"
+          },
+          {
+            "season": "2019-20",
+            "y": 14949,
+            "ty": 9000,
+            "pos": "below",
+            "line1": "Drought + Black Summer fires",
+            "line2": "lowest: 14,949 t"
+          },
+          {
+            "season": "2022-23",
+            "y": 17040,
+            "ty": 24800,
+            "pos": "topright",
+            "line1": "Varroa mite arrives",
+            "line2": "June 2022, Newcastle"
+          }
+        ]
+      },
+      "layer": [
+        {
+          "mark": {
+            "type": "rule",
+            "strokeDash": [
+              3,
+              3
+            ],
+            "color": "#6b5d4f"
+          },
+          "encoding": {
+            "x": {
+              "field": "season",
+              "type": "ordinal"
+            },
+            "y": {
+              "field": "y",
+              "type": "quantitative"
+            },
+            "y2": {
+              "field": "ty"
+            }
+          }
+        },
+        {
+          "transform": [
+            {
+              "filter": "datum.pos == 'top'"
+            }
+          ],
+          "mark": {
+            "type": "text",
+            "fontSize": 12,
+            "color": "#2b2118",
+            "dy": -18,
+            "align": "center",
+            "fontWeight": 600
+          },
+          "encoding": {
+            "x": {
+              "field": "season",
+              "type": "ordinal"
+            },
+            "y": {
+              "field": "ty",
+              "type": "quantitative"
+            },
+            "text": {
+              "field": "line1"
+            }
+          }
+        },
+        {
+          "transform": [
+            {
+              "filter": "datum.pos == 'top'"
+            }
+          ],
+          "mark": {
+            "type": "text",
+            "fontSize": 11,
+            "color": "#6b5d4f",
+            "dy": -4,
+            "align": "center"
+          },
+          "encoding": {
+            "x": {
+              "field": "season",
+              "type": "ordinal"
+            },
+            "y": {
+              "field": "ty",
+              "type": "quantitative"
+            },
+            "text": {
+              "field": "line2"
+            }
+          }
+        },
+        {
+          "transform": [
+            {
+              "filter": "datum.pos == 'topright'"
+            }
+          ],
+          "mark": {
+            "type": "text",
+            "fontSize": 12,
+            "color": "#2b2118",
+            "dy": -18,
+            "align": "right",
+            "fontWeight": 600,
+            "dx": 8
+          },
+          "encoding": {
+            "x": {
+              "field": "season",
+              "type": "ordinal"
+            },
+            "y": {
+              "field": "ty",
+              "type": "quantitative"
+            },
+            "text": {
+              "field": "line1"
+            }
+          }
+        },
+        {
+          "transform": [
+            {
+              "filter": "datum.pos == 'topright'"
+            }
+          ],
+          "mark": {
+            "type": "text",
+            "fontSize": 11,
+            "color": "#6b5d4f",
+            "dy": -4,
+            "align": "right",
+            "dx": 8
+          },
+          "encoding": {
+            "x": {
+              "field": "season",
+              "type": "ordinal"
+            },
+            "y": {
+              "field": "ty",
+              "type": "quantitative"
+            },
+            "text": {
+              "field": "line2"
+            }
+          }
+        },
+        {
+          "transform": [
+            {
+              "filter": "datum.pos == 'below'"
+            }
+          ],
+          "mark": {
+            "type": "text",
+            "fontSize": 12,
+            "color": "#2b2118",
+            "dy": 12,
+            "align": "center",
+            "fontWeight": 600
+          },
+          "encoding": {
+            "x": {
+              "field": "season",
+              "type": "ordinal"
+            },
+            "y": {
+              "field": "ty",
+              "type": "quantitative"
+            },
+            "text": {
+              "field": "line1"
+            }
+          }
+        },
+        {
+          "transform": [
+            {
+              "filter": "datum.pos == 'below'"
+            }
+          ],
+          "mark": {
+            "type": "text",
+            "fontSize": 11,
+            "color": "#6b5d4f",
+            "dy": 26,
+            "align": "center"
+          },
+          "encoding": {
+            "x": {
+              "field": "season",
+              "type": "ordinal"
+            },
+            "y": {
+              "field": "ty",
+              "type": "quantitative"
+            },
+            "text": {
+              "field": "line2"
+            }
+          }
+        }
+      ]
+    }
+  ],
+  "config": {
+    "view": {
+      "stroke": null
+    }
+  }
+}

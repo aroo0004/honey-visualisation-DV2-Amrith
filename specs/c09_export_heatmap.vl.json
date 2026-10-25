@@ -1,0 +1,186 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "Heatmap of export value (US$ million) to Australia's 12 largest honey buyers (2015-2024 combined), by year.",
+  "data": {
+    "url": "data/exports_by_partner.csv",
+    "format": {
+      "parse": {
+        "year": "number",
+        "rank": "number",
+        "value_usd_m": "number",
+        "tonnes": "number",
+        "usd_per_kg": "number",
+        "lon": "number",
+        "lat": "number"
+      }
+    }
+  },
+  "transform": [
+    {
+      "filter": {
+        "field": "partner",
+        "oneOf": [
+          "China",
+          "United States",
+          "Singapore",
+          "Canada",
+          "Hong Kong",
+          "Japan",
+          "Malaysia",
+          "United Arab Emirates",
+          "United Kingdom",
+          "Oman",
+          "Indonesia",
+          "Philippines"
+        ]
+      }
+    }
+  ],
+  "width": "container",
+  "height": 380,
+  "encoding": {
+    "x": {
+      "field": "year",
+      "type": "ordinal",
+      "title": null,
+      "axis": {
+        "orient": "top",
+        "labelAngle": 0,
+        "domain": false,
+        "ticks": false
+      }
+    },
+    "y": {
+      "field": "partner",
+      "type": "nominal",
+      "title": null,
+      "sort": [
+        "China",
+        "United States",
+        "Singapore",
+        "Canada",
+        "Hong Kong",
+        "Japan",
+        "Malaysia",
+        "United Arab Emirates",
+        "United Kingdom",
+        "Oman",
+        "Indonesia",
+        "Philippines"
+      ],
+      "axis": {
+        "domain": false,
+        "ticks": false
+      }
+    }
+  },
+  "layer": [
+    {
+      "params": [
+        {
+          "name": "cell",
+          "select": {
+            "type": "point",
+            "on": "pointerover",
+            "clear": "pointerout"
+          }
+        }
+      ],
+      "mark": {
+        "type": "rect",
+        "cornerRadius": 3,
+        "stroke": "#fffaf0",
+        "strokeWidth": 2
+      },
+      "encoding": {
+        "color": {
+          "field": "value_usd_m",
+          "type": "quantitative",
+          "title": "US$ million",
+          "scale": {
+            "range": [
+              "#fdf3d7",
+              "#f7d27a",
+              "#eba92b",
+              "#c9780f",
+              "#8a4a0b"
+            ]
+          },
+          "legend": {
+            "orient": "bottom",
+            "gradientLength": 260,
+            "direction": "horizontal"
+          }
+        },
+        "strokeWidth": {
+          "condition": {
+            "param": "cell",
+            "empty": false,
+            "value": 3
+          },
+          "value": 2
+        },
+        "stroke": {
+          "condition": {
+            "param": "cell",
+            "empty": false,
+            "value": "#2b2118"
+          },
+          "value": "#fffaf0"
+        },
+        "tooltip": [
+          {
+            "field": "partner",
+            "title": "Destination"
+          },
+          {
+            "field": "year",
+            "title": "Year"
+          },
+          {
+            "field": "value_usd_m",
+            "title": "Value (US$ million)",
+            "format": ".2f"
+          },
+          {
+            "field": "tonnes",
+            "title": "Tonnes",
+            "format": ",.0f"
+          },
+          {
+            "field": "rank",
+            "title": "Rank that year"
+          }
+        ]
+      }
+    },
+    {
+      "mark": {
+        "type": "text",
+        "fontSize": 10
+      },
+      "encoding": {
+        "text": {
+          "field": "value_usd_m",
+          "type": "quantitative",
+          "format": ".1f"
+        },
+        "color": {
+          "condition": {
+            "test": "datum.value_usd_m > 5",
+            "value": "#fffaf0"
+          },
+          "value": "#4a3b2c"
+        }
+      }
+    }
+  ],
+  "config": {
+    "view": {
+      "stroke": null
+    },
+    "axis": {
+      "labelFontSize": 12
+    }
+  }
+}

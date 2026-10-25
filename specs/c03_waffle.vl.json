@@ -1,0 +1,124 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "Waffle charts: commercial beekeepers are 4% of all beekeepers but own 73% of hives (2022-23).",
+  "data": {
+    "values": [
+      {
+        "panel": "1. Share of beekeepers",
+        "order": 1,
+        "commercial": 1872,
+        "total": 48983,
+        "label": "1,872 commercial of 48,983 beekeepers"
+      },
+      {
+        "panel": "2. Share of hives",
+        "order": 2,
+        "commercial": 630490,
+        "total": 866045,
+        "label": "630,490 commercial of 866,045 hives"
+      }
+    ]
+  },
+  "transform": [
+    {
+      "calculate": "datum.commercial / datum.total * 100",
+      "as": "pct"
+    },
+    {
+      "calculate": "sequence(0, 100)",
+      "as": "cell"
+    },
+    {
+      "flatten": [
+        "cell"
+      ]
+    },
+    {
+      "calculate": "datum.cell % 10",
+      "as": "col"
+    },
+    {
+      "calculate": "floor(datum.cell / 10)",
+      "as": "row"
+    },
+    {
+      "calculate": "datum.cell < round(datum.pct) ? 'Commercial (more than 50 hives)' : 'Recreational (hobby)'",
+      "as": "sector"
+    }
+  ],
+  "facet": {
+    "column": {
+      "field": "panel",
+      "type": "nominal",
+      "title": null,
+      "header": {
+        "labelFontSize": 14,
+        "labelFontWeight": 600,
+        "labelColor": "#2b2118",
+        "labelExpr": "slice(datum.label, 3)"
+      }
+    }
+  },
+  "spacing": 60,
+  "spec": {
+    "width": 220,
+    "height": 220,
+    "layer": [
+      {
+        "mark": {
+          "type": "square",
+          "size": 300,
+          "cornerRadius": 2
+        },
+        "encoding": {
+          "x": {
+            "field": "col",
+            "type": "ordinal",
+            "axis": null
+          },
+          "y": {
+            "field": "row",
+            "type": "ordinal",
+            "axis": null,
+            "sort": "descending"
+          },
+          "color": {
+            "field": "sector",
+            "type": "nominal",
+            "scale": {
+              "domain": [
+                "Commercial (more than 50 hives)",
+                "Recreational (hobby)"
+              ],
+              "range": [
+                "#c9780f",
+                "#f3e3c3"
+              ]
+            },
+            "legend": {
+              "title": null,
+              "orient": "bottom",
+              "direction": "horizontal"
+            }
+          },
+          "tooltip": [
+            {
+              "field": "label",
+              "title": "Data"
+            },
+            {
+              "field": "pct",
+              "title": "Commercial share (%)",
+              "format": ".1f"
+            }
+          ]
+        }
+      }
+    ]
+  },
+  "config": {
+    "view": {
+      "stroke": null
+    }
+  }
+}

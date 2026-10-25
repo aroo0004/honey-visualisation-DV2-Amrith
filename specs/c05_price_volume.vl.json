@@ -1,0 +1,189 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "Connected scatterplot: honey volume vs farmgate price received by beekeepers, 2011-12 to 2022-23.",
+  "data": {
+    "url": "data/production.csv",
+    "format": {
+      "parse": {
+        "year_end": "number",
+        "levy_tonnes": "number",
+        "price_aud_per_kg": "number"
+      }
+    }
+  },
+  "width": "container",
+  "height": 320,
+  "encoding": {
+    "x": {
+      "field": "levy_tonnes",
+      "type": "quantitative",
+      "title": "Honey produced (tonnes) →",
+      "scale": {
+        "domain": [
+          14000,
+          24000
+        ]
+      },
+      "axis": {
+        "format": ",",
+        "gridColor": "#efe6d6"
+      }
+    },
+    "y": {
+      "field": "price_aud_per_kg",
+      "type": "quantitative",
+      "title": "Price paid to beekeepers ($/kg) →",
+      "scale": {
+        "domain": [
+          3,
+          7
+        ]
+      },
+      "axis": {
+        "format": "$.2f",
+        "gridColor": "#efe6d6"
+      }
+    }
+  },
+  "layer": [
+    {
+      "mark": {
+        "type": "trail",
+        "color": "#eba92b",
+        "opacity": 0.55
+      },
+      "encoding": {
+        "order": {
+          "field": "year_end"
+        },
+        "size": {
+          "field": "year_end",
+          "type": "quantitative",
+          "scale": {
+            "range": [
+              1,
+              6
+            ]
+          },
+          "legend": null
+        }
+      }
+    },
+    {
+      "params": [
+        {
+          "name": "hov",
+          "select": {
+            "type": "point",
+            "on": "pointerover",
+            "nearest": true,
+            "clear": "pointerout"
+          }
+        }
+      ],
+      "mark": {
+        "type": "circle",
+        "size": 80,
+        "stroke": "#fffaf0",
+        "strokeWidth": 1.5
+      },
+      "encoding": {
+        "color": {
+          "field": "year_end",
+          "type": "quantitative",
+          "scale": {
+            "range": [
+              "#f7d27a",
+              "#8a4a0b"
+            ]
+          },
+          "legend": null
+        },
+        "size": {
+          "condition": {
+            "param": "hov",
+            "empty": false,
+            "value": 220
+          },
+          "value": 80
+        },
+        "tooltip": [
+          {
+            "field": "season",
+            "title": "Year"
+          },
+          {
+            "field": "levy_tonnes",
+            "title": "Honey (tonnes)",
+            "format": ","
+          },
+          {
+            "field": "price_aud_per_kg",
+            "title": "Price ($/kg)",
+            "format": "$.2f"
+          }
+        ]
+      }
+    },
+    {
+      "mark": {
+        "type": "text",
+        "fontSize": 11,
+        "color": "#6b5d4f",
+        "dx": 0,
+        "dy": -12
+      },
+      "encoding": {
+        "text": {
+          "field": "season"
+        }
+      }
+    },
+    {
+      "data": {
+        "values": [
+          {
+            "x": 19400,
+            "y": 3.3,
+            "t": "2011–14: plenty of honey, low prices"
+          },
+          {
+            "x": 14200,
+            "y": 6.85,
+            "t": "2015–20: less honey, prices up"
+          },
+          {
+            "x": 18900,
+            "y": 4.75,
+            "t": "2020–23: prices fall as cheap imports rise"
+          }
+        ]
+      },
+      "mark": {
+        "type": "text",
+        "align": "left",
+        "fontStyle": "italic",
+        "fontSize": 12,
+        "color": "#8a4a0b"
+      },
+      "encoding": {
+        "x": {
+          "field": "x",
+          "type": "quantitative"
+        },
+        "y": {
+          "field": "y",
+          "type": "quantitative"
+        },
+        "text": {
+          "field": "t"
+        }
+      }
+    }
+  ],
+  "config": {
+    "view": {
+      "stroke": null
+    }
+  }
+}

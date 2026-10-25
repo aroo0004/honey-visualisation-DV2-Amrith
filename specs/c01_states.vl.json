@@ -1,0 +1,453 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "Choropleth of beekeeping intensity by state (2022-23) linked to a dumbbell chart of beekeeper numbers, 2018 vs 2023.",
+  "params": [
+    {
+      "name": "measure",
+      "value": "hives_per_1000km2_2023",
+      "bind": {
+        "input": "select",
+        "name": "Shade states by: ",
+        "options": [
+          "hives_per_1000km2_2023",
+          "hives_per_beekeeper_2023",
+          "beekeepers_2023"
+        ],
+        "labels": [
+          "Hives per 1,000 km²",
+          "Average hives per beekeeper",
+          "Number of beekeepers"
+        ]
+      }
+    }
+  ],
+  "hconcat": [
+    {
+      "title": {
+        "text": "Where the hives are (2022-23)",
+        "anchor": "start"
+      },
+      "width": 430,
+      "height": 380,
+      "projection": {
+        "type": "conicEqualArea",
+        "parallels": [
+          -18,
+          -36
+        ],
+        "rotate": [
+          -132,
+          0
+        ]
+      },
+      "layer": [
+        {
+          "data": {
+            "url": "https://cdn.jsdelivr.net/gh/codeforgermany/click_that_hood@main/public/data/australia.geojson",
+            "format": {
+              "type": "json",
+              "property": "features"
+            }
+          },
+          "transform": [
+            {
+              "filter": "datum.properties.name != 'Other Territories'"
+            },
+            {
+              "lookup": "properties.name",
+              "from": {
+                "data": {
+                  "url": "data/states.csv",
+                  "format": {
+                    "parse": {
+                      "area_km2": "number",
+                      "lon": "number",
+                      "lat": "number",
+                      "commercial_beekeepers_2023": "number",
+                      "recreational_beekeepers_2023": "number",
+                      "beekeepers_2023": "number",
+                      "hives_2023": "number",
+                      "hives_per_1000km2_2023": "number",
+                      "hives_per_beekeeper_2023": "number",
+                      "beekeepers_2018": "number",
+                      "hives_2018": "number",
+                      "public_land_apiary_sites": "number",
+                      "public_land_share_pct": "number"
+                    }
+                  }
+                },
+                "key": "state",
+                "fields": [
+                  "abbr",
+                  "hives_2023",
+                  "beekeepers_2023",
+                  "hives_per_1000km2_2023",
+                  "hives_per_beekeeper_2023"
+                ]
+              }
+            },
+            {
+              "filter": "isValid(datum.abbr)"
+            },
+            {
+              "calculate": "datum[measure]",
+              "as": "value"
+            }
+          ],
+          "params": [
+            {
+              "name": "pick",
+              "select": {
+                "type": "point",
+                "fields": [
+                  "abbr"
+                ],
+                "on": "pointerover",
+                "clear": "pointerout"
+              }
+            }
+          ],
+          "mark": {
+            "type": "geoshape",
+            "stroke": "#fffaf0",
+            "strokeWidth": 1.2,
+            "cursor": "pointer"
+          },
+          "encoding": {
+            "color": {
+              "field": "value",
+              "type": "quantitative",
+              "scale": {
+                "type": "quantize",
+                "nice": true,
+                "range": [
+                  "#fdf3d7",
+                  "#f7d27a",
+                  "#eba92b",
+                  "#c9780f",
+                  "#8a4a0b"
+                ]
+              },
+              "legend": {
+                "title": "Selected measure",
+                "orient": "bottom-left",
+                "direction": "vertical",
+                "format": ",.0f"
+              }
+            },
+            "strokeWidth": {
+              "condition": {
+                "param": "pick",
+                "empty": false,
+                "value": 3
+              },
+              "value": 1.2
+            },
+            "tooltip": [
+              {
+                "field": "properties.name",
+                "title": "State"
+              },
+              {
+                "field": "hives_2023",
+                "title": "Hives",
+                "format": ","
+              },
+              {
+                "field": "beekeepers_2023",
+                "title": "Beekeepers",
+                "format": ","
+              },
+              {
+                "field": "hives_per_1000km2_2023",
+                "title": "Hives per 1,000 km²",
+                "format": ",.0f"
+              },
+              {
+                "field": "hives_per_beekeeper_2023",
+                "title": "Hives per beekeeper",
+                "format": ".1f"
+              }
+            ]
+          }
+        },
+        {
+          "data": {
+            "url": "data/states.csv",
+            "format": {
+              "parse": {
+                "area_km2": "number",
+                "lon": "number",
+                "lat": "number",
+                "commercial_beekeepers_2023": "number",
+                "recreational_beekeepers_2023": "number",
+                "beekeepers_2023": "number",
+                "hives_2023": "number",
+                "hives_per_1000km2_2023": "number",
+                "hives_per_beekeeper_2023": "number",
+                "beekeepers_2018": "number",
+                "hives_2018": "number",
+                "public_land_apiary_sites": "number",
+                "public_land_share_pct": "number"
+              }
+            }
+          },
+          "transform": [
+            {
+              "filter": "datum.abbr != 'ACT'"
+            }
+          ],
+          "mark": {
+            "type": "text",
+            "fontWeight": 600,
+            "fontSize": 12,
+            "color": "#2b2118"
+          },
+          "encoding": {
+            "longitude": {
+              "field": "lon",
+              "type": "quantitative"
+            },
+            "latitude": {
+              "field": "lat",
+              "type": "quantitative"
+            },
+            "text": {
+              "field": "abbr"
+            }
+          }
+        },
+        {
+          "data": {
+            "values": [
+              {
+                "lon": 152.3,
+                "lat": -38.6,
+                "t": "ACT (tiny, inside NSW):"
+              },
+              {
+                "lon": 152.3,
+                "lat": -39.7,
+                "t": "hover the tooltip near Canberra"
+              }
+            ]
+          },
+          "mark": {
+            "type": "text",
+            "fontSize": 10,
+            "align": "left",
+            "color": "#6b5d4f"
+          },
+          "encoding": {
+            "longitude": {
+              "field": "lon",
+              "type": "quantitative"
+            },
+            "latitude": {
+              "field": "lat",
+              "type": "quantitative"
+            },
+            "text": {
+              "field": "t"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "title": {
+        "text": "Beekeepers per state, 2018 → 2023",
+        "anchor": "start"
+      },
+      "data": {
+        "url": "data/states.csv",
+        "format": {
+          "parse": {
+            "area_km2": "number",
+            "lon": "number",
+            "lat": "number",
+            "commercial_beekeepers_2023": "number",
+            "recreational_beekeepers_2023": "number",
+            "beekeepers_2023": "number",
+            "hives_2023": "number",
+            "hives_per_1000km2_2023": "number",
+            "hives_per_beekeeper_2023": "number",
+            "beekeepers_2018": "number",
+            "hives_2018": "number",
+            "public_land_apiary_sites": "number",
+            "public_land_share_pct": "number"
+          }
+        }
+      },
+      "width": 300,
+      "height": 330,
+      "transform": [
+        {
+          "calculate": "(datum.beekeepers_2023 / datum.beekeepers_2018 - 1) * 100",
+          "as": "growth"
+        }
+      ],
+      "encoding": {
+        "y": {
+          "field": "abbr",
+          "type": "nominal",
+          "sort": null,
+          "title": null,
+          "axis": {
+            "labelFontWeight": 600,
+            "domain": false,
+            "ticks": false
+          }
+        },
+        "opacity": {
+          "condition": {
+            "param": "pick",
+            "empty": true,
+            "value": 1
+          },
+          "value": 0.25
+        }
+      },
+      "layer": [
+        {
+          "mark": {
+            "type": "rule",
+            "strokeWidth": 3,
+            "color": "#e7d9bf"
+          },
+          "encoding": {
+            "x": {
+              "field": "beekeepers_2018",
+              "type": "quantitative",
+              "title": "Registered beekeepers",
+              "axis": {
+                "format": "~s",
+                "grid": true,
+                "gridColor": "#efe6d6"
+              }
+            },
+            "x2": {
+              "field": "beekeepers_2023"
+            }
+          }
+        },
+        {
+          "mark": {
+            "type": "circle",
+            "size": 90,
+            "color": "#b9ab95"
+          },
+          "encoding": {
+            "x": {
+              "field": "beekeepers_2018",
+              "type": "quantitative"
+            },
+            "tooltip": [
+              {
+                "field": "abbr",
+                "title": "State"
+              },
+              {
+                "field": "beekeepers_2018",
+                "title": "Beekeepers 2018",
+                "format": ","
+              }
+            ]
+          }
+        },
+        {
+          "mark": {
+            "type": "circle",
+            "size": 130,
+            "color": "#c9780f"
+          },
+          "encoding": {
+            "x": {
+              "field": "beekeepers_2023",
+              "type": "quantitative"
+            },
+            "tooltip": [
+              {
+                "field": "abbr",
+                "title": "State"
+              },
+              {
+                "field": "beekeepers_2023",
+                "title": "Beekeepers 2023",
+                "format": ","
+              },
+              {
+                "field": "growth",
+                "title": "Change since 2018 (%)",
+                "format": "+.0f"
+              }
+            ]
+          }
+        },
+        {
+          "mark": {
+            "type": "text",
+            "align": "left",
+            "dx": 10,
+            "fontSize": 11,
+            "color": "#6b5d4f"
+          },
+          "encoding": {
+            "x": {
+              "field": "beekeepers_2023",
+              "type": "quantitative"
+            },
+            "text": {
+              "field": "growth",
+              "type": "quantitative",
+              "format": "+.0f"
+            }
+          }
+        },
+        {
+          "data": {
+            "values": [
+              {
+                "x": 15098,
+                "abbr": "NSW",
+                "t": "% change"
+              }
+            ]
+          },
+          "mark": {
+            "type": "text",
+            "align": "left",
+            "dx": 10,
+            "dy": -14,
+            "fontSize": 10,
+            "color": "#6b5d4f"
+          },
+          "encoding": {
+            "x": {
+              "field": "x",
+              "type": "quantitative"
+            },
+            "y": {
+              "field": "abbr",
+              "type": "nominal",
+              "sort": null
+            },
+            "text": {
+              "field": "t"
+            }
+          }
+        }
+      ]
+    }
+  ],
+  "resolve": {
+    "scale": {
+      "color": "independent"
+    }
+  },
+  "config": {
+    "view": {
+      "stroke": null
+    }
+  }
+}
